@@ -1,12 +1,12 @@
 {
-  "created_at": "2026-05-07T16:57:36.852223+08:00",
+  "created_at": "2026-05-07T17:45:33.065858+08:00",
   "records": [
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 39.0,
       "primary_value": 39.0,
       "primary_value_label": "盤平均",
       "product_name": "DDR5 16Gb (2Gx8) 4800/5600",
@@ -27,11 +27,11 @@
       "spread_key": "ddr5 16gb 2gx8"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 22.1,
       "primary_value": 22.1,
       "primary_value_label": "盤平均",
       "product_name": "DDR5 16Gb (2Gx8) eTT",
@@ -52,11 +52,11 @@
       "spread_key": "ddr5 16gb 2gx8 ett"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 58.568,
       "primary_value": 58.568,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 16Gb (2Gx8) 3200",
@@ -83,11 +83,11 @@
       "spread_key": "ddr4 16gb 2gx8"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 12.75,
       "primary_value": 12.75,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 16Gb (2Gx8) eTT",
@@ -108,11 +108,11 @@
       "spread_key": "ddr4 16gb 2gx8 ett"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 32.0,
       "primary_value": 32.0,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 8Gb (1Gx8) 3200",
@@ -139,11 +139,11 @@
       "spread_key": "ddr4 8gb 1gx8"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 5.48,
       "primary_value": 5.48,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 8Gb (1Gx8) eTT",
@@ -164,11 +164,11 @@
       "spread_key": "ddr4 8gb 1gx8 ett"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 8.625,
       "primary_value": 8.625,
       "primary_value_label": "盤平均",
       "product_name": "DDR3 4Gb 512Mx8 1600/1866",
@@ -189,11 +189,11 @@
       "spread_key": "ddr3 4gb 512mx8"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 75.0,
       "primary_value": 75.0,
       "primary_value_label": "盤平均",
       "product_name": "DDR5 8GB SO-DIMM",
@@ -213,11 +213,11 @@
       "spread_key": "ddr5 8gb so dimm"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 170.0,
       "primary_value": 170.0,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 16GB SO-DIMM",
@@ -237,11 +237,11 @@
       "spread_key": "ddr4 16gb so dimm"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 85.0,
       "primary_value": 85.0,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 8GB SO-DIMM",
@@ -261,11 +261,11 @@
       "spread_key": "ddr4 8gb so dimm"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 29.5,
       "primary_value": 29.5,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 16Gb 2Gx8",
@@ -291,11 +291,11 @@
       "spread_key": "ddr4 16gb 2gx8"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 13.0,
       "primary_value": 13.0,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 8Gb 1Gx8",
@@ -321,11 +321,11 @@
       "spread_key": "ddr4 8gb 1gx8"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 7.5,
       "primary_value": 7.5,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 4Gb 256Mx16",
@@ -345,11 +345,11 @@
       "spread_key": "ddr4 4gb 256mx16"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 7.5,
       "primary_value": 7.5,
       "primary_value_label": "盤平均",
       "product_name": "DDR3 4Gb 256Mx16",
@@ -369,11 +369,11 @@
       "spread_key": "ddr3 4gb 256mx16"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 216.0,
       "primary_value": 216.0,
       "primary_value_label": "盤平均",
       "product_name": "DDR5 UDIMM 16GB 4800/5600",
@@ -394,11 +394,11 @@
       "spread_key": "ddr5 udimm 16gb"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 960.0,
       "primary_value": 960.0,
       "primary_value_label": "盤平均",
       "product_name": "DDR5 RDIMM 32GB 4800/5600",
@@ -419,11 +419,11 @@
       "spread_key": "ddr5 rdimm 32gb"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 148.83,
       "primary_value": 148.83,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 UDIMM 16GB 3200",
@@ -444,11 +444,11 @@
       "spread_key": "ddr4 udimm 16gb"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 11.773,
       "primary_value": 11.773,
       "primary_value_label": "盤平均",
       "product_name": "GDDR5 8Gb",
@@ -469,11 +469,11 @@
       "spread_key": "gddr5 8gb"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "DRAM",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 11.829,
       "primary_value": 11.829,
       "primary_value_label": "盤平均",
       "product_name": "GDDR6 8Gb",
@@ -494,11 +494,11 @@
       "spread_key": "gddr6 8gb"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 3.9,
       "primary_value": 3.9,
       "primary_value_label": "盤平均",
       "product_name": "SLC 2Gb 256MBx8",
@@ -520,11 +520,11 @@
       "spread_key": "slc 2gb 256mbx8"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 3.525,
       "primary_value": 3.525,
       "primary_value_label": "盤平均",
       "product_name": "SLC 1Gb 128MBx8",
@@ -546,11 +546,11 @@
       "spread_key": "slc 1gb 128mbx8"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 19.25,
       "primary_value": 19.25,
       "primary_value_label": "盤平均",
       "product_name": "MLC 64Gb 8GBx8",
@@ -572,11 +572,11 @@
       "spread_key": "mlc 64gb 8gbx8"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 10.433,
       "primary_value": 10.433,
       "primary_value_label": "盤平均",
       "product_name": "MLC 32Gb 4GBx8",
@@ -598,11 +598,11 @@
       "spread_key": "mlc 32gb 4gbx8"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 17.725,
       "primary_value": 17.725,
       "primary_value_label": "均價",
       "product_name": "NAND 128Gb 16Gx8 MLC",
@@ -623,11 +623,11 @@
       "spread_key": "nand 128gb 16gx8 mlc"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 12.713,
       "primary_value": 12.713,
       "primary_value_label": "均價",
       "product_name": "NAND 64Gb 8Gx8 MLC",
@@ -648,11 +648,11 @@
       "spread_key": "nand 64gb 8gx8 mlc"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 10.45,
       "primary_value": 10.45,
       "primary_value_label": "均價",
       "product_name": "NAND 32Gb 4Gx8 MLC",
@@ -673,11 +673,11 @@
       "spread_key": "nand 32gb 4gx8 mlc"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 20.59,
       "primary_value": 20.59,
       "primary_value_label": "盤平均",
       "product_name": "512Gb TLC",
@@ -699,11 +699,11 @@
       "spread_key": "512gb tlc"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 10.476,
       "primary_value": 10.476,
       "primary_value_label": "盤平均",
       "product_name": "256Gb TLC",
@@ -725,11 +725,11 @@
       "spread_key": "256gb tlc"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 6.58,
       "primary_value": 6.58,
       "primary_value_label": "盤平均",
       "product_name": "128Gb TLC",
@@ -751,11 +751,11 @@
       "spread_key": "128gb tlc"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 3.19,
       "primary_value": 3.19,
       "primary_value_label": "盤平均",
       "product_name": "MicroSD 16GB",
@@ -777,11 +777,11 @@
       "spread_key": "microsd 16gb"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 5.7,
       "primary_value": 5.7,
       "primary_value_label": "盤平均",
       "product_name": "MicroSD 32GB",
@@ -803,11 +803,11 @@
       "spread_key": "microsd 32gb"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 8.35,
       "primary_value": 8.35,
       "primary_value_label": "盤平均",
       "product_name": "MicroSD 64GB",
@@ -829,11 +829,11 @@
       "spread_key": "microsd 64gb"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 16.65,
       "primary_value": 16.65,
       "primary_value_label": "盤平均",
       "product_name": "MicroSD 128GB",
@@ -855,11 +855,11 @@
       "spread_key": "microsd 128gb"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 153.9,
       "primary_value": 153.9,
       "primary_value_label": "均價",
       "product_name": "1TB-mSATA/M.2 TLC PCIe-Value Grade",
@@ -877,11 +877,11 @@
       "spread_key": "1tb msata m 2 tlc pcie value grade"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 97.1,
       "primary_value": 97.1,
       "primary_value_label": "均價",
       "product_name": "512GB-mSATA/M.2 TLC PCIe-Value Grade",
@@ -899,11 +899,11 @@
       "spread_key": "512gb msata m 2 tlc pcie value grade"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 61.3,
       "primary_value": 61.3,
       "primary_value_label": "均價",
       "product_name": "256GB-mSATA/M.2 TLC PCIe-Value Grade",
@@ -921,11 +921,11 @@
       "spread_key": "256gb msata m 2 tlc pcie value grade"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 126.17,
       "primary_value": 126.17,
       "primary_value_label": "均價",
       "product_name": "ADATA / SATA 6.0 Gb/s / SU800 / 512 GB",
@@ -947,11 +947,11 @@
       "spread_key": "adata sata 6 0 gb s su800 gb"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 135.0,
       "primary_value": 135.0,
       "primary_value_label": "均價",
       "product_name": "Kimtigo / PCIe 4.0 / TP5000 / 1 TB",
@@ -973,11 +973,11 @@
       "spread_key": "kimtigo pcie 4 0 tp5000 1 tb"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 319.97,
       "primary_value": 319.97,
       "primary_value_label": "均價",
       "product_name": "Samsung / PCIe 4.0 X4 / 990 Pro / 1 TB",
@@ -999,11 +999,11 @@
       "spread_key": "samsung pcie 4 0 x4 pro 1 tb"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 399.99,
       "primary_value": 399.99,
       "primary_value_label": "均價",
       "product_name": "PNY / PCIe 5.0 X4 / CS2150 / 2 TB",
@@ -1025,11 +1025,11 @@
       "spread_key": "pny pcie 5 0 x4 cs2150 2 tb"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "NAND Flash",
       "currency": null,
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 158.88,
       "primary_value": 158.88,
       "primary_value_label": "均價",
       "product_name": "Silicon Power / PCIe 4.0 X4 / US75 / 1 TB",
@@ -1051,11 +1051,11 @@
       "spread_key": "silicon power pcie 4 0 x4 us75 1 tb"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 126.0,
       "primary_value": 126.0,
       "primary_value_label": "均價",
       "product_name": "LCD TV / 55\"W UHD Open-Cell / LCD TV 55\"W UHD Open-Cell",
@@ -1080,11 +1080,11 @@
       "spread_key": "lcd tv 55 w uhd open cell lcd tv 55 w uhd open cell"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 63.3,
       "primary_value": 63.3,
       "primary_value_label": "均價",
       "product_name": "Monitor / 27\"W FHD/IPS LED / Monitor 27\"W FHD/IPS LED",
@@ -1109,11 +1109,11 @@
       "spread_key": "monitor 27 w fhd ips led monitor 27 w fhd ips led"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 26.7,
       "primary_value": 26.7,
       "primary_value_label": "均價",
       "product_name": "Notebook / 14.0\"W HD Flat-LED / Notebook 14.0\"W HD Flat-LED",
@@ -1138,11 +1138,11 @@
       "spread_key": "notebook 14 0 w hd flat led notebook 14 0 w hd flat led"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 1.7,
       "primary_value": 1.7,
       "primary_value_label": "均價",
       "product_name": "Smartphone / 5W HD",
@@ -1164,11 +1164,11 @@
       "spread_key": "smartphone 5w hd"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 8.5,
       "primary_value": 8.5,
       "primary_value_label": "均價",
       "product_name": "Smartphone / 5.5W FHD",
@@ -1190,11 +1190,11 @@
       "spread_key": "smartphone 5 5w fhd"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 75.1,
       "primary_value": 75.1,
       "primary_value_label": "均價",
       "product_name": "LCD MNT / 18.5\"W LED",
@@ -1216,11 +1216,11 @@
       "spread_key": "lcd mnt 18 5 w led"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 100.6,
       "primary_value": 100.6,
       "primary_value_label": "均價",
       "product_name": "LCD MNT / 21.5\"W LED",
@@ -1242,11 +1242,11 @@
       "spread_key": "lcd mnt 21 5 w led"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 317.4,
       "primary_value": 317.4,
       "primary_value_label": "均價",
       "product_name": "LCD MNT / 34\"W_WV LED",
@@ -1268,11 +1268,11 @@
       "spread_key": "lcd mnt 34 w wv led"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 408.9,
       "primary_value": 408.9,
       "primary_value_label": "均價",
       "product_name": "LCD MNT / Curved 34\"W",
@@ -1294,11 +1294,11 @@
       "spread_key": "lcd mnt curved 34 w"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 168.7,
       "primary_value": 168.7,
       "primary_value_label": "均價",
       "product_name": "LCD TV / 32\"_LED",
@@ -1320,11 +1320,11 @@
       "spread_key": "lcd tv 32 led"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 57.3,
       "primary_value": 57.3,
       "primary_value_label": "February_2",
       "product_name": "Tablet / 19143 / 28900",
@@ -1346,11 +1346,11 @@
       "spread_key": "tablet"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 56.4,
       "primary_value": 56.4,
       "primary_value_label": "February_2",
       "product_name": "Notebook / 14885 / 22860",
@@ -1372,11 +1372,11 @@
       "spread_key": "notebook"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 24.2,
       "primary_value": 24.2,
       "primary_value_label": "February_2",
       "product_name": "Monitor / 12274 / 15216",
@@ -1398,11 +1398,11 @@
       "spread_key": "monitor"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 19.7,
       "primary_value": 19.7,
       "primary_value_label": "February_2",
       "product_name": "TV / 18459 / 21474",
@@ -1424,11 +1424,11 @@
       "spread_key": "tv"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 23.4,
       "primary_value": 23.4,
       "primary_value_label": "February_2",
       "product_name": "TTL / 64762 / 88450",
@@ -1450,11 +1450,11 @@
       "spread_key": "ttl"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "PV",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 37.0,
       "primary_value": 37.0,
       "primary_value_label": "均價",
       "product_name": "N型复投料 (RMB)",
@@ -1473,11 +1473,11 @@
       "spread_key": "n型复投料"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "PV",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 35.0,
       "primary_value": 35.0,
       "primary_value_label": "均價",
       "product_name": "N型致密料 (RMB)",
@@ -1496,11 +1496,11 @@
       "spread_key": "n型致密料"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "PV",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 34.0,
       "primary_value": 34.0,
       "primary_value_label": "均價",
       "product_name": "N型颗粒硅 (RMB)",
@@ -1519,11 +1519,11 @@
       "spread_key": "n型颗粒硅"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "PV",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 17.5,
       "primary_value": 17.5,
       "primary_value_label": "均價",
       "product_name": "非中國區多晶矽 (USD)",
@@ -1542,11 +1542,11 @@
       "spread_key": "非中國區多晶矽"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "PV",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.92,
       "primary_value": 0.92,
       "primary_value_label": "均價",
       "product_name": "N型183单晶硅片-183mm/130μm (RMB) (RMB)",
@@ -1565,11 +1565,11 @@
       "spread_key": "n型183单晶硅片 183mm 130 m"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "PV",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 1.23,
       "primary_value": 1.23,
       "primary_value_label": "均價",
       "product_name": "N型210单晶硅片-210mm/130μm (RMB)",
@@ -1588,11 +1588,11 @@
       "spread_key": "n型210单晶硅片 210mm 130 m"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "PV",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 1.03,
       "primary_value": 1.03,
       "primary_value_label": "均價",
       "product_name": "N型210R单晶硅片-210*182mm/130μm (RMB)",
@@ -1611,11 +1611,11 @@
       "spread_key": "n型210r单晶硅片 182mm 130 m"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "PV",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.33,
       "primary_value": 0.33,
       "primary_value_label": "均價",
       "product_name": "M10L 单晶TOPCon电池片 (RMB)",
@@ -1634,11 +1634,11 @@
       "spread_key": "m10l 单晶topcon电池片"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "PV",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.335,
       "primary_value": 0.335,
       "primary_value_label": "均價",
       "product_name": "G12 单晶TOPCon电池片 (RMB)",
@@ -1657,11 +1657,11 @@
       "spread_key": "g12 单晶topcon电池片"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "PV",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.33,
       "primary_value": 0.33,
       "primary_value_label": "均價",
       "product_name": "G12R 单晶TOPCon电池片 (RMB)",
@@ -1680,11 +1680,11 @@
       "spread_key": "g12r 单晶topcon电池片"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "PV",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.78,
       "primary_value": 0.78,
       "primary_value_label": "均價",
       "product_name": "182mm TOPCon 组件 (RMB)",
@@ -1703,11 +1703,11 @@
       "spread_key": "182mm topcon 组件"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "PV",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.76,
       "primary_value": 0.76,
       "primary_value_label": "均價",
       "product_name": "210mm HJT 组件 (RMB)",
@@ -1726,11 +1726,11 @@
       "spread_key": "210mm hjt 组件"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "PV",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 10.5,
       "primary_value": 10.5,
       "primary_value_label": "均價",
       "product_name": "2.0 mm 双层镀膜 (RMB)",
@@ -1749,11 +1749,11 @@
       "spread_key": "2 0 mm 双层镀膜"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "PV",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 17.75,
       "primary_value": 17.75,
       "primary_value_label": "均價",
       "product_name": "3.2 mm 双层镀膜 (RMB)",
@@ -1772,11 +1772,11 @@
       "spread_key": "3 2 mm 双层镀膜"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "PV",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 8.75,
       "primary_value": 8.75,
       "primary_value_label": "均價",
       "product_name": "2.0 背板玻璃 (RMB)",
@@ -1795,11 +1795,11 @@
       "spread_key": "2 0 背板玻璃"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.58,
       "primary_value": 0.58,
       "primary_value_label": "均價",
       "product_name": "電池芯-方形三元電池芯：動力型（元/Wh） (RMB)",
@@ -1816,11 +1816,11 @@
       "spread_key": "電池芯 方形三元電池芯 動力型 元 wh"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.38,
       "primary_value": 0.38,
       "primary_value_label": "均價",
       "product_name": "電池芯-方形鐵鋰電池芯：動力型（元/Wh） (RMB)",
@@ -1837,11 +1837,11 @@
       "spread_key": "電池芯 方形鐵鋰電池芯 動力型 元 wh"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.59,
       "primary_value": 0.59,
       "primary_value_label": "均價",
       "product_name": "電池芯-軟包三元電池芯：動力型（元/Wh） (RMB)",
@@ -1858,11 +1858,11 @@
       "spread_key": "電池芯 軟包三元電池芯 動力型 元 wh"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.35,
       "primary_value": 0.35,
       "primary_value_label": "均價",
       "product_name": "電池芯-方形鐵鋰電池芯：儲能型（元/Wh） (RMB)",
@@ -1879,11 +1879,11 @@
       "spread_key": "電池芯 方形鐵鋰電池芯 儲能型 元 wh"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 8.25,
       "primary_value": 8.25,
       "primary_value_label": "均價",
       "product_name": "電池芯-鈷酸鋰電池芯：消費型（元/Ah） (RMB)",
@@ -1900,11 +1900,11 @@
       "spread_key": "電池芯 鈷酸鋰電池芯 消費型 元 ah"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.72,
       "primary_value": 0.72,
       "primary_value_label": "均價",
       "product_name": "電池包-方形三元（元/Wh） (RMB)",
@@ -1921,11 +1921,11 @@
       "spread_key": "電池包 方形三元 元 wh"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.5,
       "primary_value": 0.5,
       "primary_value_label": "均價",
       "product_name": "電池包-方形磷酸鐵鋰（元/Wh） (RMB)",
@@ -1942,11 +1942,11 @@
       "spread_key": "電池包 方形磷酸鐵鋰 元 wh"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 1.2,
       "primary_value": 1.2,
       "primary_value_label": "均價",
       "product_name": "前驅體-磷酸鐵（萬元/噸） (RMB)",
@@ -1963,11 +1963,11 @@
       "spread_key": "前驅體 磷酸鐵 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 10.59,
       "primary_value": 10.59,
       "primary_value_label": "均價",
       "product_name": "前驅體-NCM523（萬元/噸） (RMB)",
@@ -1984,11 +1984,11 @@
       "spread_key": "前驅體 ncm523 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 10.3,
       "primary_value": 10.3,
       "primary_value_label": "均價",
       "product_name": "前驅體-NCM622（萬元/噸） (RMB)",
@@ -2005,11 +2005,11 @@
       "spread_key": "前驅體 ncm622 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 11.73,
       "primary_value": 11.73,
       "primary_value_label": "均價",
       "product_name": "前驅體-NCM811（萬元/噸） (RMB)",
@@ -2026,11 +2026,11 @@
       "spread_key": "前驅體 ncm811 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 18.29,
       "primary_value": 18.29,
       "primary_value_label": "均價",
       "product_name": "正極材料-NCM523（萬元/噸） (RMB)",
@@ -2047,11 +2047,11 @@
       "spread_key": "正極材料 ncm523 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 18.53,
       "primary_value": 18.53,
       "primary_value_label": "均價",
       "product_name": "正極材料-NCM622（萬元/噸） (RMB)",
@@ -2068,11 +2068,11 @@
       "spread_key": "正極材料 ncm622 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 20.4,
       "primary_value": 20.4,
       "primary_value_label": "均價",
       "product_name": "正極材料-NCM811（萬元/噸） (RMB)",
@@ -2089,11 +2089,11 @@
       "spread_key": "正極材料 ncm811 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 5.55,
       "primary_value": 5.55,
       "primary_value_label": "均價",
       "product_name": "正極材料-LFP（萬元/噸） (RMB)",
@@ -2110,11 +2110,11 @@
       "spread_key": "正極材料 lfp 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 39.76,
       "primary_value": 39.76,
       "primary_value_label": "均價",
       "product_name": "正極材料-LCO（萬元/噸） (RMB)",
@@ -2131,11 +2131,11 @@
       "spread_key": "正極材料 lco 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 5.54,
       "primary_value": 5.54,
       "primary_value_label": "均價",
       "product_name": "正極材料-LMO（萬元/噸） (RMB)",
@@ -2152,11 +2152,11 @@
       "spread_key": "正極材料 lmo 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.75,
       "primary_value": 0.75,
       "primary_value_label": "均價",
       "product_name": "石墨化加工費-低階（萬元/噸） (RMB)",
@@ -2173,11 +2173,11 @@
       "spread_key": "石墨化加工費 低階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.9,
       "primary_value": 0.9,
       "primary_value_label": "均價",
       "product_name": "石墨化加工費-高階（萬元/噸） (RMB)",
@@ -2194,11 +2194,11 @@
       "spread_key": "石墨化加工費 高階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 2.12,
       "primary_value": 2.12,
       "primary_value_label": "均價",
       "product_name": "天然石墨-低階（萬元/噸） (RMB)",
@@ -2215,11 +2215,11 @@
       "spread_key": "天然石墨 低階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 2.67,
       "primary_value": 2.67,
       "primary_value_label": "均價",
       "product_name": "天然石墨-中階（萬元/噸） (RMB)",
@@ -2236,11 +2236,11 @@
       "spread_key": "天然石墨 中階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 4.52,
       "primary_value": 4.52,
       "primary_value_label": "均價",
       "product_name": "天然石墨-高階（萬元/噸） (RMB)",
@@ -2257,11 +2257,11 @@
       "spread_key": "天然石墨 高階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 2.13,
       "primary_value": 2.13,
       "primary_value_label": "均價",
       "product_name": "人造石墨-低階（萬元/噸） (RMB)",
@@ -2278,11 +2278,11 @@
       "spread_key": "人造石墨 低階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 2.95,
       "primary_value": 2.95,
       "primary_value_label": "均價",
       "product_name": "人造石墨-中階（萬元/噸） (RMB)",
@@ -2299,11 +2299,11 @@
       "spread_key": "人造石墨 中階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 5.2,
       "primary_value": 5.2,
       "primary_value_label": "均價",
       "product_name": "人造石墨-高階（萬元/噸） (RMB)",
@@ -2320,11 +2320,11 @@
       "spread_key": "人造石墨 高階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.45,
       "primary_value": 0.45,
       "primary_value_label": "均價",
       "product_name": "乾式隔離膜-16μm（元/平米） (RMB)",
@@ -2341,11 +2341,11 @@
       "spread_key": "乾式隔離膜 16 m 元 平米"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.85,
       "primary_value": 0.85,
       "primary_value_label": "均價",
       "product_name": "濕式隔離膜-7μm（元/平米） (RMB)",
@@ -2362,11 +2362,11 @@
       "spread_key": "濕式隔離膜 7 m 元 平米"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 0.83,
       "primary_value": 0.83,
       "primary_value_label": "均價",
       "product_name": "濕式隔離膜-9μm（元/平米） (RMB)",
@@ -2383,11 +2383,11 @@
       "spread_key": "濕式隔離膜 9 m 元 平米"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 1.15,
       "primary_value": 1.15,
       "primary_value_label": "均價",
       "product_name": "塗覆隔離膜-7μm+2μm陶瓷塗覆隔離膜（元/平米） (RMB)",
@@ -2404,11 +2404,11 @@
       "spread_key": "塗覆隔離膜 7 m 2 m陶瓷塗覆隔離膜 元 平米"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 1.13,
       "primary_value": 1.13,
       "primary_value_label": "均價",
       "product_name": "塗覆隔離膜-9μm+3μm陶瓷塗覆隔離膜（元/平米） (RMB)",
@@ -2425,11 +2425,11 @@
       "spread_key": "塗覆隔離膜 9 m 3 m陶瓷塗覆隔離膜 元 平米"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 11.21,
       "primary_value": 11.21,
       "primary_value_label": "均價",
       "product_name": "電解質鋰鹽-六氟磷酸鋰（萬元/噸） (RMB)",
@@ -2446,11 +2446,11 @@
       "spread_key": "電解質鋰鹽 六氟磷酸鋰 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 3.17,
       "primary_value": 3.17,
       "primary_value_label": "均價",
       "product_name": "電解液-三元電池用（萬元/噸） (RMB)",
@@ -2467,11 +2467,11 @@
       "spread_key": "電解液 三元電池用 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 3.1,
       "primary_value": 3.1,
       "primary_value_label": "均價",
       "product_name": "電解液-磷酸鐵鋰電池用（萬元/噸） (RMB)",
@@ -2488,11 +2488,11 @@
       "spread_key": "電解液 磷酸鐵鋰電池用 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 4.7,
       "primary_value": 4.7,
       "primary_value_label": "均價",
       "product_name": "電解液-鈷酸鋰（4.35V）電池用（萬元/噸） (RMB)",
@@ -2509,11 +2509,11 @@
       "spread_key": "電解液 鈷酸鋰 4 35v 電池用 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "USD",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 2221.0,
       "primary_value": 2221.0,
       "primary_value_label": "均價",
       "product_name": "鋰輝石精礦:6%，CIF（美元/噸） (USD)",
@@ -2530,11 +2530,11 @@
       "spread_key": "鋰輝石精礦 6 cif 美元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 15.67,
       "primary_value": 15.67,
       "primary_value_label": "均價",
       "product_name": "電池級碳酸鋰（萬元/噸） (RMB)",
@@ -2551,11 +2551,11 @@
       "spread_key": "電池級碳酸鋰 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 15.29,
       "primary_value": 15.29,
       "primary_value_label": "均價",
       "product_name": "電池級氫氧化鋰（萬元/噸） (RMB)",
@@ -2572,11 +2572,11 @@
       "spread_key": "電池級氫氧化鋰 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 42.91,
       "primary_value": 42.91,
       "primary_value_label": "均價",
       "product_name": "電解鈷：Co含量≥99.8%（萬元/噸） (RMB)",
@@ -2593,11 +2593,11 @@
       "spread_key": "電解鈷 co含量 99 8 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 37.07,
       "primary_value": 37.07,
       "primary_value_label": "均價",
       "product_name": "四氧化三鈷：Co含量≥72.8%（萬元/噸） (RMB)",
@@ -2614,11 +2614,11 @@
       "spread_key": "四氧化三鈷 co含量 72 8 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 9.59,
       "primary_value": 9.59,
       "primary_value_label": "均價",
       "product_name": "電池級硫酸鈷：Co含量≥20.5%（萬元/噸） (RMB)",
@@ -2635,11 +2635,11 @@
       "spread_key": "電池級硫酸鈷 co含量 20 5 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 13.94,
       "primary_value": 13.94,
       "primary_value_label": "均價",
       "product_name": "電解鎳 Ni 99.9%min（萬元/噸） (RMB)",
@@ -2656,11 +2656,11 @@
       "spread_key": "電解鎳 ni 99 9 min 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 3.21,
       "primary_value": 3.21,
       "primary_value_label": "均價",
       "product_name": "電池級硫酸鎳 Ni 22%min（萬元/噸） (RMB)",
@@ -2677,11 +2677,11 @@
       "spread_key": "電池級硫酸鎳 ni 22 min 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 1.95,
       "primary_value": 1.95,
       "primary_value_label": "均價",
       "product_name": "銅箔-6μm電池級銅箔加工費（萬元/噸） (RMB)",
@@ -2698,11 +2698,11 @@
       "spread_key": "銅箔 6 m電池級銅箔加工費 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T16:57:36.852223+08:00",
+      "captured_at": "2026-05-07T17:45:33.065858+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
-      "daily_change_percent": null,
-      "previous_value": null,
+      "daily_change_percent": 0.0,
+      "previous_value": 1.5,
       "primary_value": 1.5,
       "primary_value_label": "均價",
       "product_name": "鋁箔-12μm電池級鋁箔加工費（萬元/噸） (RMB)",
