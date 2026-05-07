@@ -1,8 +1,8 @@
 {
-  "created_at": "2026-05-07T17:45:33.065858+08:00",
+  "created_at": "2026-05-07T17:58:09.289869+08:00",
   "records": [
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -27,7 +27,7 @@
       "spread_key": "ddr5 16gb 2gx8"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -52,7 +52,7 @@
       "spread_key": "ddr5 16gb 2gx8 ett"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -83,7 +83,7 @@
       "spread_key": "ddr4 16gb 2gx8"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -108,7 +108,7 @@
       "spread_key": "ddr4 16gb 2gx8 ett"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -139,7 +139,7 @@
       "spread_key": "ddr4 8gb 1gx8"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -164,7 +164,7 @@
       "spread_key": "ddr4 8gb 1gx8 ett"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -189,7 +189,7 @@
       "spread_key": "ddr3 4gb 512mx8"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -213,7 +213,7 @@
       "spread_key": "ddr5 8gb so dimm"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -237,7 +237,7 @@
       "spread_key": "ddr4 16gb so dimm"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -261,7 +261,7 @@
       "spread_key": "ddr4 8gb so dimm"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -291,7 +291,7 @@
       "spread_key": "ddr4 16gb 2gx8"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -321,7 +321,7 @@
       "spread_key": "ddr4 8gb 1gx8"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -345,7 +345,7 @@
       "spread_key": "ddr4 4gb 256mx16"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -369,7 +369,7 @@
       "spread_key": "ddr3 4gb 256mx16"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -394,7 +394,7 @@
       "spread_key": "ddr5 udimm 16gb"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -419,7 +419,7 @@
       "spread_key": "ddr5 rdimm 32gb"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -444,7 +444,7 @@
       "spread_key": "ddr4 udimm 16gb"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -469,7 +469,7 @@
       "spread_key": "gddr5 8gb"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "DRAM",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -494,7 +494,7 @@
       "spread_key": "gddr6 8gb"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -520,7 +520,7 @@
       "spread_key": "slc 2gb 256mbx8"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -546,7 +546,7 @@
       "spread_key": "slc 1gb 128mbx8"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -572,7 +572,7 @@
       "spread_key": "mlc 64gb 8gbx8"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -598,7 +598,7 @@
       "spread_key": "mlc 32gb 4gbx8"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -623,7 +623,7 @@
       "spread_key": "nand 128gb 16gx8 mlc"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -648,7 +648,7 @@
       "spread_key": "nand 64gb 8gx8 mlc"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -673,7 +673,7 @@
       "spread_key": "nand 32gb 4gx8 mlc"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -699,7 +699,7 @@
       "spread_key": "512gb tlc"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -725,7 +725,7 @@
       "spread_key": "256gb tlc"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -751,7 +751,7 @@
       "spread_key": "128gb tlc"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -777,7 +777,7 @@
       "spread_key": "microsd 16gb"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -803,7 +803,7 @@
       "spread_key": "microsd 32gb"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -829,7 +829,7 @@
       "spread_key": "microsd 64gb"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -855,7 +855,7 @@
       "spread_key": "microsd 128gb"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -877,7 +877,7 @@
       "spread_key": "1tb msata m 2 tlc pcie value grade"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -899,7 +899,7 @@
       "spread_key": "512gb msata m 2 tlc pcie value grade"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -921,7 +921,7 @@
       "spread_key": "256gb msata m 2 tlc pcie value grade"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -947,7 +947,7 @@
       "spread_key": "adata sata 6 0 gb s su800 gb"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -973,7 +973,7 @@
       "spread_key": "kimtigo pcie 4 0 tp5000 1 tb"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -999,7 +999,7 @@
       "spread_key": "samsung pcie 4 0 x4 pro 1 tb"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -1025,7 +1025,7 @@
       "spread_key": "pny pcie 5 0 x4 cs2150 2 tb"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "NAND Flash",
       "currency": null,
       "daily_change_percent": 0.0,
@@ -1051,7 +1051,7 @@
       "spread_key": "silicon power pcie 4 0 x4 us75 1 tb"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1080,7 +1080,7 @@
       "spread_key": "lcd tv 55 w uhd open cell lcd tv 55 w uhd open cell"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1109,7 +1109,7 @@
       "spread_key": "monitor 27 w fhd ips led monitor 27 w fhd ips led"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1138,7 +1138,7 @@
       "spread_key": "notebook 14 0 w hd flat led notebook 14 0 w hd flat led"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1164,7 +1164,7 @@
       "spread_key": "smartphone 5w hd"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1190,7 +1190,7 @@
       "spread_key": "smartphone 5 5w fhd"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1216,7 +1216,7 @@
       "spread_key": "lcd mnt 18 5 w led"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1242,7 +1242,7 @@
       "spread_key": "lcd mnt 21 5 w led"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1268,7 +1268,7 @@
       "spread_key": "lcd mnt 34 w wv led"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1294,7 +1294,7 @@
       "spread_key": "lcd mnt curved 34 w"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1320,7 +1320,7 @@
       "spread_key": "lcd tv 32 led"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1346,7 +1346,7 @@
       "spread_key": "tablet"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1372,7 +1372,7 @@
       "spread_key": "notebook"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1398,7 +1398,7 @@
       "spread_key": "monitor"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1424,7 +1424,7 @@
       "spread_key": "tv"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "TFT-LCD",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1450,7 +1450,7 @@
       "spread_key": "ttl"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "PV",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1473,7 +1473,7 @@
       "spread_key": "n型复投料"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "PV",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1496,7 +1496,7 @@
       "spread_key": "n型致密料"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "PV",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1519,7 +1519,7 @@
       "spread_key": "n型颗粒硅"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "PV",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -1542,7 +1542,7 @@
       "spread_key": "非中國區多晶矽"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "PV",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1565,7 +1565,7 @@
       "spread_key": "n型183单晶硅片 183mm 130 m"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "PV",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1588,7 +1588,7 @@
       "spread_key": "n型210单晶硅片 210mm 130 m"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "PV",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1611,7 +1611,7 @@
       "spread_key": "n型210r单晶硅片 182mm 130 m"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "PV",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1634,7 +1634,7 @@
       "spread_key": "m10l 单晶topcon电池片"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "PV",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1657,7 +1657,7 @@
       "spread_key": "g12 单晶topcon电池片"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "PV",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1680,7 +1680,7 @@
       "spread_key": "g12r 单晶topcon电池片"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "PV",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1703,7 +1703,7 @@
       "spread_key": "182mm topcon 组件"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "PV",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1726,7 +1726,7 @@
       "spread_key": "210mm hjt 组件"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "PV",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1749,7 +1749,7 @@
       "spread_key": "2 0 mm 双层镀膜"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "PV",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1772,7 +1772,7 @@
       "spread_key": "3 2 mm 双层镀膜"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "PV",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1795,7 +1795,7 @@
       "spread_key": "2 0 背板玻璃"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1816,7 +1816,7 @@
       "spread_key": "電池芯 方形三元電池芯 動力型 元 wh"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1837,7 +1837,7 @@
       "spread_key": "電池芯 方形鐵鋰電池芯 動力型 元 wh"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1858,7 +1858,7 @@
       "spread_key": "電池芯 軟包三元電池芯 動力型 元 wh"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1879,7 +1879,7 @@
       "spread_key": "電池芯 方形鐵鋰電池芯 儲能型 元 wh"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1900,7 +1900,7 @@
       "spread_key": "電池芯 鈷酸鋰電池芯 消費型 元 ah"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1921,7 +1921,7 @@
       "spread_key": "電池包 方形三元 元 wh"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1942,7 +1942,7 @@
       "spread_key": "電池包 方形磷酸鐵鋰 元 wh"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1963,7 +1963,7 @@
       "spread_key": "前驅體 磷酸鐵 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -1984,7 +1984,7 @@
       "spread_key": "前驅體 ncm523 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2005,7 +2005,7 @@
       "spread_key": "前驅體 ncm622 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2026,7 +2026,7 @@
       "spread_key": "前驅體 ncm811 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2047,7 +2047,7 @@
       "spread_key": "正極材料 ncm523 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2068,7 +2068,7 @@
       "spread_key": "正極材料 ncm622 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2089,7 +2089,7 @@
       "spread_key": "正極材料 ncm811 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2110,7 +2110,7 @@
       "spread_key": "正極材料 lfp 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2131,7 +2131,7 @@
       "spread_key": "正極材料 lco 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2152,7 +2152,7 @@
       "spread_key": "正極材料 lmo 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2173,7 +2173,7 @@
       "spread_key": "石墨化加工費 低階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2194,7 +2194,7 @@
       "spread_key": "石墨化加工費 高階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2215,7 +2215,7 @@
       "spread_key": "天然石墨 低階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2236,7 +2236,7 @@
       "spread_key": "天然石墨 中階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2257,7 +2257,7 @@
       "spread_key": "天然石墨 高階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2278,7 +2278,7 @@
       "spread_key": "人造石墨 低階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2299,7 +2299,7 @@
       "spread_key": "人造石墨 中階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2320,7 +2320,7 @@
       "spread_key": "人造石墨 高階 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2341,7 +2341,7 @@
       "spread_key": "乾式隔離膜 16 m 元 平米"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2362,7 +2362,7 @@
       "spread_key": "濕式隔離膜 7 m 元 平米"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2383,7 +2383,7 @@
       "spread_key": "濕式隔離膜 9 m 元 平米"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2404,7 +2404,7 @@
       "spread_key": "塗覆隔離膜 7 m 2 m陶瓷塗覆隔離膜 元 平米"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2425,7 +2425,7 @@
       "spread_key": "塗覆隔離膜 9 m 3 m陶瓷塗覆隔離膜 元 平米"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2446,7 +2446,7 @@
       "spread_key": "電解質鋰鹽 六氟磷酸鋰 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2467,7 +2467,7 @@
       "spread_key": "電解液 三元電池用 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2488,7 +2488,7 @@
       "spread_key": "電解液 磷酸鐵鋰電池用 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2509,7 +2509,7 @@
       "spread_key": "電解液 鈷酸鋰 4 35v 電池用 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "USD",
       "daily_change_percent": 0.0,
@@ -2530,7 +2530,7 @@
       "spread_key": "鋰輝石精礦 6 cif 美元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2551,7 +2551,7 @@
       "spread_key": "電池級碳酸鋰 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2572,7 +2572,7 @@
       "spread_key": "電池級氫氧化鋰 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2593,7 +2593,7 @@
       "spread_key": "電解鈷 co含量 99 8 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2614,7 +2614,7 @@
       "spread_key": "四氧化三鈷 co含量 72 8 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2635,7 +2635,7 @@
       "spread_key": "電池級硫酸鈷 co含量 20 5 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2656,7 +2656,7 @@
       "spread_key": "電解鎳 ni 99 9 min 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2677,7 +2677,7 @@
       "spread_key": "電池級硫酸鎳 ni 22 min 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
@@ -2698,7 +2698,7 @@
       "spread_key": "銅箔 6 m電池級銅箔加工費 萬元 噸"
     },
     {
-      "captured_at": "2026-05-07T17:45:33.065858+08:00",
+      "captured_at": "2026-05-07T17:58:09.289869+08:00",
       "category": "Li-Ion Battery",
       "currency": "RMB",
       "daily_change_percent": 0.0,
