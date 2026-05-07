@@ -447,7 +447,12 @@ def quote_summary(record: dict[str, Any]) -> str:
     parts = []
 
     for key, value in record["quote"].items():
+        lowered = key.lower()
+
         if key in name_headers or "走勢圖" in key:
+            continue
+
+        if any(hint in key or hint in lowered for hint in CHANGE_HEADER_HINTS):
             continue
 
         if value:
@@ -533,7 +538,6 @@ def build_html_report(records: list[dict[str, Any]], captured_at: datetime) -> s
             f"<td>{html.escape(record['section'])}</td>"
             f"<td>{html.escape(record['product_name'])}</td>"
             f"<td>{html.escape(quote_summary(record))}</td>"
-            f"<td>{html.escape(fmt_number(record.get('previous_value')))}</td>"
             f"<td class=\"{percent_css_class(source_change)}\">{html.escape(fmt_percent(source_change))}</td>"
             f"<td class=\"{percent_css_class(daily_change)}\">{html.escape(fmt_percent(daily_change))}</td>"
             f"<td>{html.escape(spread or 'N/A')}</td>"
@@ -612,7 +616,6 @@ def build_html_report(records: list[dict[str, Any]], captured_at: datetime) -> s
         <th>產品群組</th>
         <th>產品名稱</th>
         <th>報價資料</th>
-        <th>前次主值</th>
         <th>來源漲跌幅</th>
         <th>昨日比較</th>
         <th>現貨/期貨或合約價差</th>
