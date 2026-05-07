@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate a daily TrendForce price report."""
+"""Generate a daily TrendForce price report and email it with a PDF attachment."""
 
 from __future__ import annotations
 
@@ -22,6 +22,7 @@ from zoneinfo import ZoneInfo
 import requests
 from bs4 import BeautifulSoup
 from bs4.element import Tag
+from weasyprint import HTML
 
 
 TIMEZONE = ZoneInfo("Asia/Taipei")
@@ -463,6 +464,16 @@ def fmt_percent(value: float | None) -> str:
     return f"{direction} {value:.2f}%"
 
 
+def percent_css_class(value: float | None) -> str:
+    if value is None:
+        return "percent-none"
+    if value > 0:
+        return "percent-up"
+    if value < 0:
+        return "percent-down"
+    return "percent-flat"
+
+
 def fmt_number(value: float | None) -> str:
     if value is None:
         return "N/A"
@@ -476,6 +487,7 @@ def build_markdown_report(records: list[dict[str, Any]], captured_at: datetime) 
         "",
         f"抓取時間：{captured_at:%Y-%m-%d %H:%M:%S %Z}",
         "",
+        "> PDF/HTML 報告採用台灣市場慣例：漲幅以紅色標示，跌幅以綠色標示。",
         "> 昨日比較以 repository 中前一次保存的主要報價欄位計算。若前一份資料沒有相同品項，則顯示 N/A。",
         "",
     ]
@@ -497,6 +509,7 @@ def build_markdown_report(records: list[dict[str, Any]], captured_at: datetime) 
                 "- "
                 f"{record['product_name']} | "
                 f"{quote_summary(record)} | "
+                f"來源漲跌幅: {fmt_percent(record.get('site_change_percent'))} | "
                 f"昨日比較: {fmt_percent(record.get('daily_change_percent'))}"
                 + (f" | 現貨/期貨或合約價差: {spread}" if spread else "")
             )
@@ -511,6 +524,8 @@ def build_html_report(records: list[dict[str, Any]], captured_at: datetime) -> s
 
     for record in records:
         spread = record.get("spot_contract_spread", {}).get("label", "")
+        source_change = record.get("site_change_percent")
+        daily_change = record.get("daily_change_percent")
 
         rows.append(
             "<tr>"
@@ -519,7 +534,8 @@ def build_html_report(records: list[dict[str, Any]], captured_at: datetime) -> s
             f"<td>{html.escape(record['product_name'])}</td>"
             f"<td>{html.escape(quote_summary(record))}</td>"
             f"<td>{html.escape(fmt_number(record.get('previous_value')))}</td>"
-            f"<td>{html.escape(fmt_percent(record.get('daily_change_percent')))}</td>"
+            f"<td class=\"{percent_css_class(source_change)}\">{html.escape(fmt_percent(source_change))}</td>"
+            f"<td class=\"{percent_css_class(daily_change)}\">{html.escape(fmt_percent(daily_change))}</td>"
             f"<td>{html.escape(spread or 'N/A')}</td>"
             f"<td>{html.escape(record.get('source_update') or 'N/A')}</td>"
             "</tr>"
@@ -531,19 +547,25 @@ def build_html_report(records: list[dict[str, Any]], captured_at: datetime) -> s
   <meta charset="utf-8">
   <title>TrendForce 每日報價報告</title>
   <style>
+    @page {{
+      size: A4 landscape;
+      margin: 12mm;
+    }}
     body {{
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Noto Sans CJK TC", "Noto Sans CJK", "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: #17202a;
+      font-size: 12px;
     }}
     table {{
       border-collapse: collapse;
       width: 100%;
-      font-size: 13px;
+      font-size: 11px;
     }}
     th, td {{
       border: 1px solid #d8dee4;
-      padding: 8px;
+      padding: 6px;
       vertical-align: top;
+      word-break: break-word;
     }}
     th {{
       background: #f6f8fa;
@@ -551,15 +573,38 @@ def build_html_report(records: list[dict[str, Any]], captured_at: datetime) -> s
     }}
     h1 {{
       font-size: 22px;
+      margin-bottom: 4px;
     }}
     .meta {{
       color: #57606a;
+      margin-top: 0;
+    }}
+    .note {{
+      color: #57606a;
+      font-size: 11px;
+      margin: 4px 0 12px;
+    }}
+    .percent-up {{
+      color: #d1242f;
+      font-weight: 700;
+    }}
+    .percent-down {{
+      color: #1a7f37;
+      font-weight: 700;
+    }}
+    .percent-flat {{
+      color: #57606a;
+      font-weight: 600;
+    }}
+    .percent-none {{
+      color: #8c959f;
     }}
   </style>
 </head>
 <body>
   <h1>TrendForce 每日報價報告 - {captured_at:%Y-%m-%d}</h1>
   <p class="meta">抓取時間：{captured_at:%Y-%m-%d %H:%M:%S %Z}</p>
+  <p class="note">顏色標示採台灣市場慣例：漲幅為紅色，跌幅為綠色。</p>
   <table>
     <thead>
       <tr>
@@ -568,6 +613,7 @@ def build_html_report(records: list[dict[str, Any]], captured_at: datetime) -> s
         <th>產品名稱</th>
         <th>報價資料</th>
         <th>前次主值</th>
+        <th>來源漲跌幅</th>
         <th>昨日比較</th>
         <th>現貨/期貨或合約價差</th>
         <th>來源更新時間</th>
@@ -600,6 +646,11 @@ def save_history(history_path: Path, records: list[dict[str, Any]], captured_at:
 def write_report(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
+
+
+def write_pdf_report(path: Path, html_content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    HTML(string=html_content, base_url=str(Path.cwd())).write_pdf(str(path))
 
 
 def smtp_config_missing() -> list[str]:
@@ -644,12 +695,29 @@ def send_email(
     message.add_alternative(html_body, subtype="html")
 
     if attachment_path and attachment_path.exists():
-        message.add_attachment(
-            attachment_path.read_bytes(),
-            maintype="text",
-            subtype="markdown",
-            filename=attachment_path.name,
-        )
+        suffix = attachment_path.suffix.lower()
+
+        if suffix == ".pdf":
+            message.add_attachment(
+                attachment_path.read_bytes(),
+                maintype="application",
+                subtype="pdf",
+                filename=attachment_path.name,
+            )
+        elif suffix == ".html":
+            message.add_attachment(
+                attachment_path.read_bytes(),
+                maintype="text",
+                subtype="html",
+                filename=attachment_path.name,
+            )
+        else:
+            message.add_attachment(
+                attachment_path.read_bytes(),
+                maintype="text",
+                subtype="plain",
+                filename=attachment_path.name,
+            )
 
     if use_ssl:
         with smtplib.SMTP_SSL(
@@ -677,7 +745,10 @@ def run(args: argparse.Namespace) -> int:
 
     report_html_path = Path(args.report_html) if args.report_html else output_dir / "latest.html"
     report_md_path = Path(args.report_md) if args.report_md else output_dir / "latest.md"
+    report_pdf_path = Path(args.report_pdf) if args.report_pdf else output_dir / "latest.pdf"
+
     daily_report_md_path = output_dir / f"trendforce_daily_report_{today}.md"
+    daily_report_pdf_path = output_dir / f"trendforce_daily_report_{today}.pdf"
     daily_snapshot_path = history_dir / f"{today}.json"
 
     previous_records = load_previous_records(history_path)
@@ -703,6 +774,9 @@ def run(args: argparse.Namespace) -> int:
     write_report(report_html_path, html_report)
     write_report(report_md_path, markdown_report)
     write_report(daily_report_md_path, markdown_report)
+
+    write_pdf_report(report_pdf_path, html_report)
+    write_pdf_report(daily_report_pdf_path, html_report)
 
     save_history(daily_snapshot_path, records, captured_at)
 
@@ -733,13 +807,15 @@ def run(args: argparse.Namespace) -> int:
                 text_body=markdown_report,
                 html_body=html_report,
                 recipient=recipient,
-                attachment_path=report_md_path,
+                attachment_path=daily_report_pdf_path,
             )
 
     print(f"Parsed {len(records)} records.")
     print(f"HTML report: {report_html_path}")
     print(f"Markdown report: {report_md_path}")
+    print(f"PDF report: {report_pdf_path}")
     print(f"Daily Markdown report: {daily_report_md_path}")
+    print(f"Daily PDF report: {daily_report_pdf_path}")
     print(f"Daily snapshot: {daily_snapshot_path}")
 
     if args.save_history:
@@ -756,6 +832,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output-dir", default="reports")
     parser.add_argument("--report-html", default=None)
     parser.add_argument("--report-md", default=None)
+    parser.add_argument("--report-pdf", default=None)
     parser.add_argument("--mail-to", default=None)
     parser.add_argument("--recipient", default=None)
     parser.add_argument("--timeout", type=int, default=30)
