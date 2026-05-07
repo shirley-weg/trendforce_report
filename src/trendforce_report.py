@@ -335,6 +335,11 @@ def get_section_update(section: Tag) -> str | None:
     return text.replace("Last Update", "").strip() or None
 
 
+def normalize_filter_text(value: Any) -> str:
+    """Normalize text before deciding whether a table is a price quote table."""
+    return clean_text(value).lower().replace("　", " ")
+
+
 def is_non_price_section(section_title: str, headers: list[str]) -> bool:
     """Return True for tables that are market statistics, not price quotes.
 
@@ -342,12 +347,13 @@ def is_non_price_section(section_title: str, headers: list[str]) -> bool:
     columns such as K units and K square. It is useful industry data, but it is
     not a quote table and should not appear in the daily price report.
     """
-    lowered_title = section_title.lower()
+    lowered_title = normalize_filter_text(section_title)
 
+    # Strong rule: any section whose title says shipment / 出貨 is not a price table.
     if any(keyword in lowered_title for keyword in NON_PRICE_SECTION_KEYWORDS):
         return True
 
-    lowered_headers = [header.lower() for header in headers]
+    lowered_headers = [normalize_filter_text(header) for header in headers]
     matched_headers = sum(
         1
         for header in lowered_headers
@@ -355,6 +361,47 @@ def is_non_price_section(section_title: str, headers: list[str]) -> bool:
     )
 
     return matched_headers >= 2
+
+
+def is_non_price_record(record: dict[str, Any]) -> bool:
+    """Final safety filter for rows that were parsed from non-price tables.
+
+    This prevents shipment / volume statistics from appearing in the report even
+    if the HTML structure changes and the section-level filter misses them.
+    """
+    category = normalize_filter_text(record.get("category", ""))
+    section = normalize_filter_text(record.get("section", ""))
+    product_name = normalize_filter_text(record.get("product_name", ""))
+    quote = record.get("quote") or {}
+    quote_keys = [normalize_filter_text(key) for key in quote.keys()]
+    quote_values = [normalize_filter_text(value) for value in quote.values()]
+    joined_quote = " ".join([*quote_keys, *quote_values])
+
+    if any(keyword in section for keyword in NON_PRICE_SECTION_KEYWORDS):
+        return True
+
+    # Explicitly remove the TFT-LCD shipment table shown as
+    # "Large Size Panel Shipment $USD". It is shipment volume / area, not price.
+    if category == "tft-lcd" and "large size panel shipment" in section:
+        return True
+
+    # Shipment tables commonly contain K units / K square / Worldwide / Area.
+    shipment_header_hits = sum(
+        1 for keyword in NON_PRICE_HEADER_KEYWORDS if keyword in joined_quote
+    )
+    if shipment_header_hits >= 2:
+        return True
+
+    # Safety rule for rows parsed like "Tablet / 19143 / 28900" or
+    # "TTL / 64762 / 88450", which are volume rows, not products with prices.
+    if category == "tft-lcd" and re.search(
+        r"^(tablet|notebook|monitor|tv|ttl)\s*/\s*\d+(?:\.\d+)?\s*/\s*\d+",
+        product_name,
+        flags=re.I,
+    ):
+        return True
+
+    return False
 
 
 def parse_price_page(fetch: FetchResult, captured_at: datetime) -> list[dict[str, Any]]:
@@ -895,6 +942,10 @@ def run(args: argparse.Namespace) -> int:
 
     for fetch in fetch_pages(timeout=args.timeout):
         records.extend(parse_price_page(fetch, captured_at))
+
+    # Final guard: keep only actual price quote records. This removes shipment
+    # statistics such as TFT-LCD "Large Size Panel Shipment $USD" from the report.
+    records = [record for record in records if not is_non_price_record(record)]
 
     if not records:
         raise RuntimeError("No price records were parsed from TrendForce pages.")
