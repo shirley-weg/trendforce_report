@@ -31,6 +31,7 @@ jobs:
           SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           SMTP_FROM: ${{ secrets.SMTP_FROM }}
+          MAIL_FROM: ${{ secrets.SMTP_FROM }}
         run: python src/trendforce_report.py --send-email --save-history
 
       - name: Commit generated snapshot and report
