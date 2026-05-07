@@ -91,6 +91,16 @@ PRIMARY_VALUE_HEADERS = (
 
 CHANGE_HEADER_HINTS = ("漲跌", "change", "mom", "hoh", "%")
 
+TOOLTIP_ATTRIBUTES = (
+    "title",
+    "data-title",
+    "data-original-title",
+    "data-bs-title",
+    "data-content",
+    "data-bs-content",
+    "aria-label",
+)
+
 
 @dataclass
 class FetchResult:
@@ -106,6 +116,81 @@ def clean_text(value: Any) -> str:
     text = html.unescape(str(value or ""))
     text = text.replace("\xa0", " ")
     return re.sub(r"\s+", " ", text).strip()
+
+
+def normalize_company_text(value: Any, visible_text: str = "") -> str | None:
+    text = clean_text(value)
+
+    if not text:
+        return None
+
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = clean_text(text)
+
+    if not text:
+        return None
+
+    if visible_text and text == clean_text(visible_text):
+        return None
+
+    lowered = text.lower()
+    ignored_values = {
+        "走勢圖",
+        "history",
+        "image",
+        "more",
+        "click here",
+    }
+
+    if lowered in ignored_values:
+        return None
+
+    if text.startswith("http://") or text.startswith("https://"):
+        return None
+
+    return text
+
+
+def extract_company_names_from_cells(product_cells: list[Tag], product_name: str) -> str | None:
+    company_names: list[str] = []
+    seen: set[str] = set()
+
+    for cell in product_cells:
+        visible_text = clean_text(cell)
+        nodes = [cell, *cell.find_all(True)]
+
+        for node in nodes:
+            for attr in TOOLTIP_ATTRIBUTES:
+                raw_value = node.get(attr)
+
+                if raw_value is None:
+                    continue
+
+                if isinstance(raw_value, list):
+                    raw_value = " ".join(str(part) for part in raw_value)
+
+                company_text = normalize_company_text(raw_value, visible_text or product_name)
+
+                if not company_text or company_text in seen:
+                    continue
+
+                company_names.append(company_text)
+                seen.add(company_text)
+
+    if not company_names:
+        return None
+
+    return "、".join(company_names)
+
+
+def product_name_for_report(record: dict[str, Any]) -> str:
+    product_name = record["product_name"]
+    company_names = record.get("company_names")
+
+    if company_names:
+        return f"{product_name} ({company_names})"
+
+    return product_name
 
 
 def parse_decimal(text: str | None) -> float | None:
@@ -272,6 +357,7 @@ def parse_price_page(fetch: FetchResult, captured_at: datetime) -> list[dict[str
                 continue
 
             cells: list[str] = []
+            cell_tags: list[Tag] = []
 
             for td in tr.find_all("td", recursive=False):
                 classes = td.get("class") or []
@@ -283,6 +369,7 @@ def parse_price_page(fetch: FetchResult, captured_at: datetime) -> list[dict[str
                     continue
 
                 cells.append(clean_text(td))
+                cell_tags.append(td)
 
             if len(cells) < 2:
                 continue
@@ -297,6 +384,8 @@ def parse_price_page(fetch: FetchResult, captured_at: datetime) -> list[dict[str
             row = dict(zip(row_headers, cells))
             product_parts = [part for part in cells[:first_price_column] if part]
             product_name = " / ".join(product_parts) if product_parts else cells[0]
+            product_cells = cell_tags[:first_price_column] if first_price_column > 0 else cell_tags[:1]
+            company_names = extract_company_names_from_cells(product_cells, product_name)
             primary_label, primary_value = find_primary_value(row)
 
             if primary_value is None and not any(
@@ -312,6 +401,7 @@ def parse_price_page(fetch: FetchResult, captured_at: datetime) -> list[dict[str
                 "source_url": fetch.url,
                 "source_update": update_time,
                 "product_name": product_name,
+                "company_names": company_names,
                 "currency": detect_currency(product_name, row, section_title),
                 "primary_value_label": primary_label,
                 "primary_value": primary_value,
@@ -512,7 +602,7 @@ def build_markdown_report(records: list[dict[str, Any]], captured_at: datetime) 
             spread = record.get("spot_contract_spread", {}).get("label", "")
             lines.append(
                 "- "
-                f"{record['product_name']} | "
+                f"{product_name_for_report(record)} | "
                 f"{quote_summary(record)} | "
                 f"來源漲跌幅: {fmt_percent(record.get('site_change_percent'))} | "
                 f"昨日比較: {fmt_percent(record.get('daily_change_percent'))}"
@@ -536,7 +626,7 @@ def build_html_report(records: list[dict[str, Any]], captured_at: datetime) -> s
             "<tr>"
             f"<td>{html.escape(record['category'])}</td>"
             f"<td>{html.escape(record['section'])}</td>"
-            f"<td>{html.escape(record['product_name'])}</td>"
+            f"<td>{html.escape(product_name_for_report(record))}</td>"
             f"<td>{html.escape(quote_summary(record))}</td>"
             f"<td class=\"{percent_css_class(source_change)}\">{html.escape(fmt_percent(source_change))}</td>"
             f"<td class=\"{percent_css_class(daily_change)}\">{html.escape(fmt_percent(daily_change))}</td>"
