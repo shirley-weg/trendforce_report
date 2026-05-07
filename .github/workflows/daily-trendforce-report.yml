@@ -2,7 +2,9 @@ name: Daily TrendForce Price Report
 
 on:
   schedule:
-    - cron: "30 23 * * *"
+    # Run every day at 18:30 Asia/Taipei.
+    # GitHub Actions cron uses UTC, so 18:30 Asia/Taipei = 10:30 UTC.
+    - cron: "30 10 * * *"
   workflow_dispatch:
 
 permissions:
