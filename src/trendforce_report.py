@@ -1,296 +1,648 @@
 #!/usr/bin/env python3
-"""Scrape TrendForce public price pages and email a daily report."""
+"""Generate a daily TrendForce price report."""
+
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import os
 import re
 import smtplib
 import ssl
 import sys
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass
 from datetime import datetime, timedelta
+from decimal import Decimal, InvalidOperation
 from email.message import EmailMessage
-from html import unescape
 from pathlib import Path
-from typing import Iterable
-from urllib.error import URLError, HTTPError
-from urllib.request import Request, urlopen
+from typing import Any
 from zoneinfo import ZoneInfo
 
+import requests
+from bs4 import BeautifulSoup
+from bs4.element import Tag
 
+
+TIMEZONE = ZoneInfo("Asia/Taipei")
 BASE_URL = "https://www.trendforce.com.tw"
-PRICE_CATEGORY_URLS = [
-    "https://www.trendforce.com.tw/price/dram/dram_spot",
-    "https://www.trendforce.com.tw/price/flash/flash_spot",
-    "https://www.trendforce.com.tw/price/lcd/panel",
-    "https://www.trendforce.com.tw/price/pv/polysilicon",
-    "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
+DEFAULT_MAIL_TO = "w0617w0617@gmail.com"
+
+PRICE_PAGES = [
+    {
+        "category": "DRAM",
+        "url": "https://www.trendforce.com.tw/price/dram/dram_spot",
+    },
+    {
+        "category": "NAND Flash",
+        "url": "https://www.trendforce.com.tw/price/flash/flash_spot",
+    },
+    {
+        "category": "TFT-LCD",
+        "url": "https://www.trendforce.com.tw/price/lcd/panel",
+    },
+    {
+        "category": "PV",
+        "url": "https://www.trendforce.com.tw/price/pv/polysilicon",
+    },
+    {
+        "category": "Li-Ion Battery",
+        "url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
+    },
 ]
-DEFAULT_RECIPIENT = "w0617w0617@gmail.com"
-USER_AGENT = (
-    "Mozilla/5.0 (compatible; TrendForceDailyReporter/1.0; "
-    "+https://github.com/)"
+
+REQUEST_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (compatible; TrendForceDailyReport/1.0; "
+        "+https://github.com/)"
+    ),
+    "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
+}
+
+PRICE_HEADER_HINTS = (
+    "高點",
+    "低點",
+    "均價",
+    "平均",
+    "avg",
+    "price",
+    "last",
+    "january",
+    "february",
+    "march",
+    "april",
+    "may",
+    "june",
+    "july",
+    "august",
+    "september",
+    "october",
+    "november",
+    "december",
 )
-AVERAGE_COLUMNS = ("盤平均", "均價", "平均", "Avg", "Average")
-HIGH_COLUMNS = ("盤高點", "高點", "日高點", "週高點", "High")
-LOW_COLUMNS = ("盤低點", "低點", "日低點", "週低點", "Low")
-CHANGE_COLUMNS = ("盤漲跌幅", "均價漲跌", "漲跌幅", "Change")
+
+PRIMARY_VALUE_HEADERS = (
+    "盤平均",
+    "均價",
+    "平均",
+    "avg",
+)
+
+CHANGE_HEADER_HINTS = ("漲跌", "change", "mom", "hoh", "%")
 
 
-@dataclass(slots=True)
-class PriceQuote:
+@dataclass
+class FetchResult:
     category: str
-    table: str
-    source_url: str
-    last_update: str | None
-    product_name: str
-    quote: dict[str, str]
-    quote_value: float | None
-    source_change_percent: float | None
-    yesterday_change_percent: float | None = None
-    spread_value: float | None = None
-    spread_label: str | None = None
-
-    @property
-    def stable_key(self) -> str:
-        return "|".join([self.category, self.table, self.product_name])
+    url: str
+    html_text: str
 
 
-def fetch_html(url: str, timeout: int = 45) -> str:
-    request = Request(url, headers={"User-Agent": USER_AGENT, "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8"})
-    with urlopen(request, timeout=timeout) as response:
-        charset = response.headers.get_content_charset() or "utf-8"
-        return response.read().decode(charset, errors="replace")
+def clean_text(value: Any) -> str:
+    if isinstance(value, Tag):
+        value = value.get_text(" ", strip=True)
+
+    text = html.unescape(str(value or ""))
+    text = text.replace("\xa0", " ")
+    return re.sub(r"\s+", " ", text).strip()
 
 
-def strip_tags(fragment: str) -> str:
-    fragment = re.sub(r"<script\b[^>]*>.*?</script>", " ", fragment, flags=re.I | re.S)
-    fragment = re.sub(r"<style\b[^>]*>.*?</style>", " ", fragment, flags=re.I | re.S)
-    fragment = re.sub(r"<[^>]+>", " ", fragment)
-    return fragment
-
-
-def clean_text(value: str) -> str:
-    return re.sub(r"\s+", " ", unescape(strip_tags(value))).strip()
-
-
-def number_from_text(value: str | None) -> float | None:
-    if not value:
+def parse_decimal(text: str | None) -> float | None:
+    if not text:
         return None
-    text = value.replace(",", "")
-    match = re.search(r"[-+]?\d+(?:\.\d+)?", text)
+
+    normalized = clean_text(text).replace(",", "")
+    match = re.search(r"-?\d+(?:\.\d+)?", normalized)
     if not match:
         return None
-    return float(match.group(0))
+
+    try:
+        return float(Decimal(match.group(0)))
+    except (InvalidOperation, ValueError):
+        return None
 
 
-def category_title(html: str, fallback_url: str) -> str:
-    for match in re.finditer(r"<(h1|h2)\b[^>]*>(.*?)</\1>", html, flags=re.I | re.S):
-        text = clean_text(match.group(2))
-        if "價格趨勢" in text:
-            return text.replace("價格趨勢", "").strip() or text
-    return fallback_url.rstrip("/").split("/")[-2]
+def unique_headers(headers: list[str]) -> list[str]:
+    seen: dict[str, int] = {}
+    result: list[str] = []
+
+    for header in headers:
+        base = header or "欄位"
+        seen[base] = seen.get(base, 0) + 1
+        result.append(base if seen[base] == 1 else f"{base}_{seen[base]}")
+
+    return result
 
 
-def extract_table_rows(table_html: str) -> tuple[list[str], list[list[str]]]:
-    rows: list[list[str]] = []
-    for row_match in re.finditer(r"<tr\b[^>]*>(.*?)</tr>", table_html, flags=re.I | re.S):
-        row_html = row_match.group(1)
-        cells = [clean_text(cell.group(2)) for cell in re.finditer(r"<(th|td)\b[^>]*>(.*?)</\1>", row_html, flags=re.I | re.S)]
-        cells = [cell for cell in cells if cell and cell != "走勢圖"]
-        if cells:
-            rows.append(cells)
-    if not rows:
-        return [], []
-    headers = rows[0]
-    return headers, rows[1:]
+def classify_section(title: str) -> str:
+    lowered = title.lower()
+
+    if "contract" in lowered or "future" in lowered or "期貨" in title or "合約" in title:
+        return "contract"
+
+    if "spot" in lowered or "street price" in lowered or "現貨" in title:
+        return "spot"
+
+    return "other"
 
 
-def choose_column(headers: list[str], candidates: tuple[str, ...]) -> int | None:
-    for candidate in candidates:
-        for index, header in enumerate(headers):
-            if candidate.lower() in header.lower():
-                return index
+def normalize_spread_key(product_name: str) -> str:
+    text = clean_text(product_name).lower()
+    text = re.sub(r"\((rmb|usd|ntd|twd)\)", " ", text, flags=re.I)
+    text = re.sub(r"[()（）]", " ", text)
+    text = re.sub(r"\b\d{3,5}(?:/\d{3,5})?\b", " ", text)
+    text = re.sub(r"[^0-9a-z\u4e00-\u9fff]+", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def record_key(record: dict[str, Any]) -> str:
+    return "|".join(
+        [
+            record["category"],
+            record["section"],
+            record["product_name"],
+            record.get("currency") or "",
+        ]
+    )
+
+
+def detect_currency(product_name: str, row: dict[str, str], section_title: str) -> str | None:
+    joined = " ".join([product_name, section_title, *row.values()])
+
+    for currency in ("USD", "RMB", "TWD", "NTD", "$USD"):
+        if currency.lower() in joined.lower():
+            return "USD" if currency == "$USD" else currency
+
     return None
 
 
-def row_to_quote(headers: list[str], cells: list[str]) -> dict[str, str]:
-    quote: dict[str, str] = {}
+def find_first_price_column(headers: list[str]) -> int:
     for index, header in enumerate(headers):
-        if index < len(cells):
-            quote[header] = cells[index]
-    return quote
+        lowered = header.lower()
+
+        if any(hint in header or hint in lowered for hint in PRICE_HEADER_HINTS):
+            return index
+
+    return 1 if len(headers) > 1 else 0
 
 
-def quote_value(headers: list[str], quote: dict[str, str]) -> float | None:
-    for candidates in (AVERAGE_COLUMNS, HIGH_COLUMNS, LOW_COLUMNS):
-        idx = choose_column(headers, candidates)
-        if idx is not None and idx < len(headers):
-            parsed = number_from_text(quote.get(headers[idx]))
+def find_primary_value(row: dict[str, str]) -> tuple[str | None, float | None]:
+    for header, value in row.items():
+        lowered = header.lower()
+
+        if "last avg" in lowered:
+            continue
+
+        if any(hint in header or hint in lowered for hint in PRIMARY_VALUE_HEADERS):
+            parsed = parse_decimal(value)
+            if parsed is not None:
+                return header, parsed
+
+    for header, value in reversed(list(row.items())):
+        lowered = header.lower()
+
+        if any(hint in header or hint in lowered for hint in CHANGE_HEADER_HINTS):
+            continue
+
+        parsed = parse_decimal(value)
+        if parsed is not None:
+            return header, parsed
+
+    return None, None
+
+
+def find_change_percent(row: dict[str, str]) -> float | None:
+    for header, value in row.items():
+        lowered = header.lower()
+
+        if any(hint in header or hint in lowered for hint in CHANGE_HEADER_HINTS):
+            parsed = parse_decimal(value)
             if parsed is not None:
                 return parsed
+
     return None
 
 
-def title_before_table(prefix_html: str) -> str:
-    headings = list(re.finditer(r"<(h2|h3|h4|a)\b[^>]*>(.*?)</\1>", prefix_html, flags=re.I | re.S))
-    for match in reversed(headings[-12:]):
-        text = clean_text(match.group(2))
-        if text and ("Price" in text or "未稅" in text or text in {"多晶矽", "矽晶圓", "電池片", "模組", "光伏玻璃"}):
-            return text
-    text_prefix = clean_text(prefix_html[-1200:])
-    match = re.search(r"([^。\n|]*?(?:Price|多晶矽|矽晶圓|電池片|模組|光伏玻璃)[^。\n|]*?)(?:Last Update|項目)", text_prefix)
-    return match.group(1).strip() if match else "未命名報價表"
+def get_section_update(section: Tag) -> str | None:
+    update = section.select_one(".price-last-update")
 
-
-def last_update_before_table(prefix_html: str) -> str | None:
-    text_prefix = clean_text(prefix_html[-1600:])
-    matches = list(re.finditer(r"Last Update\s+(.+?)(?=\s+項目\s|$)", text_prefix))
-    if not matches:
+    if not update:
         return None
-    return matches[-1].group(1).strip()
+
+    text = clean_text(update)
+    return text.replace("Last Update", "").strip() or None
 
 
-def parse_price_page(html: str, url: str) -> list[PriceQuote]:
-    category = category_title(html, url)
-    quotes: list[PriceQuote] = []
-    for table_match in re.finditer(r"<table\b[^>]*>.*?</table>", html, flags=re.I | re.S):
-        table_html = table_match.group(0)
-        headers, rows = extract_table_rows(table_html)
-        if not headers or ("項目" not in "".join(headers) and "品牌" not in "".join(headers)):
+def parse_price_page(fetch: FetchResult, captured_at: datetime) -> list[dict[str, Any]]:
+    soup = BeautifulSoup(fetch.html_text, "html.parser")
+    records: list[dict[str, Any]] = []
+
+    for section in soup.select(".price-content"):
+        title_node = section.select_one(".price-title")
+        section_title = clean_text(title_node)
+        section_title = re.sub(r"\s*\(未稅\)\s*$", "", section_title).strip()
+
+        if not section_title:
             continue
-        name_idx = 0
-        change_idx = choose_column(headers, CHANGE_COLUMNS)
-        prefix = html[: table_match.start()]
-        title = title_before_table(prefix)
-        updated_at = last_update_before_table(prefix)
-        for cells in rows:
-            if len(cells) <= name_idx:
+
+        table = section.select_one("table.price-table")
+        if not table:
+            continue
+
+        headers = [
+            clean_text(th)
+            for th in table.select("thead th")
+            if "走勢圖" not in clean_text(th)
+        ]
+        headers = unique_headers(headers)
+
+        if not headers:
+            continue
+
+        first_price_column = find_first_price_column(headers)
+        update_time = get_section_update(section)
+        section_kind = classify_section(section_title)
+
+        body_rows = table.select("tbody tr")
+        rows = body_rows if body_rows else table.find_all("tr")
+
+        for tr in rows:
+            if tr.find_parent("thead") or tr.find_parent("tfoot"):
                 continue
-            quote = row_to_quote(headers, cells)
-            name_parts = [cells[0]]
-            if headers[0] == "品牌" and len(cells) >= 4:
-                name_parts = cells[:4]
-            product_name = clean_text(" ".join(name_parts))
-            if not product_name:
+
+            cells: list[str] = []
+
+            for td in tr.find_all("td", recursive=False):
+                classes = td.get("class") or []
+
+                if "desktop-only" in classes and "history-cell" in classes:
+                    continue
+
+                if td.get("colspan"):
+                    continue
+
+                cells.append(clean_text(td))
+
+            if len(cells) < 2:
                 continue
-            value = quote_value(headers, quote)
-            source_change = None
-            if change_idx is not None and change_idx < len(cells):
-                source_change = number_from_text(cells[change_idx])
-            quotes.append(PriceQuote(category, title, url, updated_at, product_name, quote, value, source_change))
-    return quotes
+
+            row_headers = headers[: len(cells)]
+
+            if len(cells) > len(headers):
+                row_headers += [
+                    f"extra_{i}" for i in range(len(headers) + 1, len(cells) + 1)
+                ]
+
+            row = dict(zip(row_headers, cells))
+            product_parts = [part for part in cells[:first_price_column] if part]
+            product_name = " / ".join(product_parts) if product_parts else cells[0]
+            primary_label, primary_value = find_primary_value(row)
+
+            if primary_value is None and not any(
+                parse_decimal(value) is not None for value in row.values()
+            ):
+                continue
+
+            record = {
+                "captured_at": captured_at.isoformat(),
+                "category": fetch.category,
+                "section": section_title,
+                "section_kind": section_kind,
+                "source_url": fetch.url,
+                "source_update": update_time,
+                "product_name": product_name,
+                "currency": detect_currency(product_name, row, section_title),
+                "primary_value_label": primary_label,
+                "primary_value": primary_value,
+                "site_change_percent": find_change_percent(row),
+                "quote": row,
+                "spread_key": normalize_spread_key(product_name),
+            }
+            records.append(record)
+
+    return records
 
 
-def scrape_all(urls: Iterable[str]) -> list[PriceQuote]:
-    all_quotes: list[PriceQuote] = []
-    failures: list[str] = []
-    for url in urls:
-        try:
-            all_quotes.extend(parse_price_page(fetch_html(url), url))
-        except (HTTPError, URLError, TimeoutError, OSError) as exc:
-            failures.append(f"{url}: {exc}")
-    if failures:
-        raise RuntimeError("TrendForce fetch failed:\n" + "\n".join(failures))
-    return all_quotes
+def fetch_pages(timeout: int) -> list[FetchResult]:
+    session = requests.Session()
+    session.headers.update(REQUEST_HEADERS)
+
+    results: list[FetchResult] = []
+
+    for page in PRICE_PAGES:
+        response = session.get(page["url"], timeout=timeout)
+        response.raise_for_status()
+        results.append(
+            FetchResult(
+                category=page["category"],
+                url=page["url"],
+                html_text=response.text,
+            )
+        )
+
+    return results
 
 
-def load_history(path: Path) -> dict[str, dict]:
-    if not path.exists():
+def load_previous_records(history_path: Path) -> dict[str, dict[str, Any]]:
+    if not history_path.exists():
         return {}
-    with path.open("r", encoding="utf-8") as file:
-        data = json.load(file)
-    return {item["stable_key"]: item for item in data.get("quotes", [])}
+
+    data = json.loads(history_path.read_text(encoding="utf-8"))
+
+    if "records" in data:
+        records = data.get("records", [])
+        return {record_key(record): record for record in records}
+
+    if "quotes" in data:
+        records = data.get("quotes", [])
+        converted_records = []
+
+        for quote in records:
+            converted_records.append(
+                {
+                    "category": quote.get("category", ""),
+                    "section": quote.get("table", ""),
+                    "product_name": quote.get("product_name", ""),
+                    "currency": quote.get("currency") or "",
+                    "primary_value": quote.get("quote_value"),
+                }
+            )
+
+        return {record_key(record): record for record in converted_records}
+
+    return {}
 
 
-def add_comparisons(quotes: list[PriceQuote], yesterday: dict[str, dict]) -> None:
-    for quote in quotes:
-        previous = yesterday.get(quote.stable_key)
-        previous_value = previous.get("quote_value") if previous else None
-        if quote.quote_value is not None and previous_value not in (None, 0):
-            quote.yesterday_change_percent = ((quote.quote_value - float(previous_value)) / float(previous_value)) * 100
+def add_daily_comparisons(
+    current_records: list[dict[str, Any]],
+    previous_records: dict[str, dict[str, Any]],
+) -> None:
+    for record in current_records:
+        previous = previous_records.get(record_key(record))
+        previous_value = previous.get("primary_value") if previous else None
+        current_value = record.get("primary_value")
+
+        record["previous_value"] = previous_value
+        record["daily_change_percent"] = None
+
+        if current_value is None or previous_value in (None, 0):
+            continue
+
+        record["daily_change_percent"] = ((current_value - previous_value) / previous_value) * 100
 
 
-def add_spreads(quotes: list[PriceQuote]) -> None:
-    spot_lookup: dict[tuple[str, str], PriceQuote] = {}
-    for quote in quotes:
-        lower = f"{quote.table} {quote.product_name}".lower()
-        if "spot" in lower or "現貨" in lower:
-            spot_lookup[(quote.category, quote.product_name)] = quote
-    for quote in quotes:
-        lower = f"{quote.table} {quote.product_name}".lower()
-        is_future_or_contract = any(token in lower for token in ("contract", "future", "期貨", "合約"))
-        spot = spot_lookup.get((quote.category, quote.product_name))
-        if is_future_or_contract and spot and quote.quote_value is not None and spot.quote_value is not None:
-            quote.spread_value = quote.quote_value - spot.quote_value
-            quote.spread_label = "正價差" if quote.spread_value > 0 else "負價差" if quote.spread_value < 0 else "零價差"
+def add_spreads(records: list[dict[str, Any]]) -> None:
+    spot_records: dict[tuple[str, str, str], dict[str, Any]] = {}
+    contract_records: dict[tuple[str, str, str], dict[str, Any]] = {}
+
+    for record in records:
+        value = record.get("primary_value")
+
+        if value is None:
+            continue
+
+        key = (
+            record["category"],
+            record.get("currency") or "",
+            record.get("spread_key") or "",
+        )
+
+        if not key[2]:
+            continue
+
+        if record["section_kind"] == "spot":
+            spot_records.setdefault(key, record)
+        elif record["section_kind"] == "contract":
+            contract_records.setdefault(key, record)
+
+    for key, spot_record in spot_records.items():
+        contract_record = contract_records.get(key)
+
+        if not contract_record:
+            continue
+
+        spread = contract_record["primary_value"] - spot_record["primary_value"]
+        spread_type = "正價差" if spread > 0 else "負價差" if spread < 0 else "零價差"
+
+        payload = {
+            "spot_section": spot_record["section"],
+            "contract_section": contract_record["section"],
+            "value": spread,
+            "label": f"{spread:.4g} ({spread_type})",
+        }
+
+        spot_record["spot_contract_spread"] = payload
+        contract_record["spot_contract_spread"] = payload
 
 
-def serialise_snapshot(quotes: list[PriceQuote], generated_at: str) -> dict:
-    return {
-        "generated_at": generated_at,
+def quote_summary(record: dict[str, Any]) -> str:
+    name_headers = set()
+    headers = list(record["quote"].keys())
+    first_price_column = find_first_price_column(headers)
+
+    for header in headers[:first_price_column]:
+        name_headers.add(header)
+
+    parts = []
+
+    for key, value in record["quote"].items():
+        if key in name_headers or "走勢圖" in key:
+            continue
+
+        if value:
+            parts.append(f"{key}: {value}")
+
+    return "; ".join(parts)
+
+
+def fmt_percent(value: float | None) -> str:
+    if value is None:
+        return "N/A"
+
+    direction = "▲" if value > 0 else "▼" if value < 0 else "—"
+    return f"{direction} {value:.2f}%"
+
+
+def fmt_number(value: float | None) -> str:
+    if value is None:
+        return "N/A"
+
+    return f"{value:,.4g}"
+
+
+def build_markdown_report(records: list[dict[str, Any]], captured_at: datetime) -> str:
+    lines = [
+        f"# TrendForce 每日報價報告 - {captured_at:%Y-%m-%d}",
+        "",
+        f"抓取時間：{captured_at:%Y-%m-%d %H:%M:%S %Z}",
+        "",
+        "> 昨日比較以 repository 中前一次保存的主要報價欄位計算。若前一份資料沒有相同品項，則顯示 N/A。",
+        "",
+    ]
+
+    for category in sorted({record["category"] for record in records}):
+        lines.extend([f"## {category}", ""])
+
+        category_records = [record for record in records if record["category"] == category]
+        current_section = None
+
+        for record in category_records:
+            if record["section"] != current_section:
+                current_section = record["section"]
+                update = record.get("source_update") or "N/A"
+                lines.extend([f"### {current_section}", f"Last Update: {update}", ""])
+
+            spread = record.get("spot_contract_spread", {}).get("label", "")
+            lines.append(
+                "- "
+                f"{record['product_name']} | "
+                f"{quote_summary(record)} | "
+                f"昨日比較: {fmt_percent(record.get('daily_change_percent'))}"
+                + (f" | 現貨/期貨或合約價差: {spread}" if spread else "")
+            )
+
+        lines.append("")
+
+    return "\n".join(lines).strip() + "\n"
+
+
+def build_html_report(records: list[dict[str, Any]], captured_at: datetime) -> str:
+    rows = []
+
+    for record in records:
+        spread = record.get("spot_contract_spread", {}).get("label", "")
+
+        rows.append(
+            "<tr>"
+            f"<td>{html.escape(record['category'])}</td>"
+            f"<td>{html.escape(record['section'])}</td>"
+            f"<td>{html.escape(record['product_name'])}</td>"
+            f"<td>{html.escape(quote_summary(record))}</td>"
+            f"<td>{html.escape(fmt_number(record.get('previous_value')))}</td>"
+            f"<td>{html.escape(fmt_percent(record.get('daily_change_percent')))}</td>"
+            f"<td>{html.escape(spread or 'N/A')}</td>"
+            f"<td>{html.escape(record.get('source_update') or 'N/A')}</td>"
+            "</tr>"
+        )
+
+    return f"""<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>TrendForce 每日報價報告</title>
+  <style>
+    body {{
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #17202a;
+    }}
+    table {{
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 13px;
+    }}
+    th, td {{
+      border: 1px solid #d8dee4;
+      padding: 8px;
+      vertical-align: top;
+    }}
+    th {{
+      background: #f6f8fa;
+      text-align: left;
+    }}
+    h1 {{
+      font-size: 22px;
+    }}
+    .meta {{
+      color: #57606a;
+    }}
+  </style>
+</head>
+<body>
+  <h1>TrendForce 每日報價報告 - {captured_at:%Y-%m-%d}</h1>
+  <p class="meta">抓取時間：{captured_at:%Y-%m-%d %H:%M:%S %Z}</p>
+  <table>
+    <thead>
+      <tr>
+        <th>分類</th>
+        <th>產品群組</th>
+        <th>產品名稱</th>
+        <th>報價資料</th>
+        <th>前次主值</th>
+        <th>昨日比較</th>
+        <th>現貨/期貨或合約價差</th>
+        <th>來源更新時間</th>
+      </tr>
+    </thead>
+    <tbody>
+      {''.join(rows)}
+    </tbody>
+  </table>
+</body>
+</html>
+"""
+
+
+def save_history(history_path: Path, records: list[dict[str, Any]], captured_at: datetime) -> None:
+    history_path.parent.mkdir(parents=True, exist_ok=True)
+
+    payload = {
+        "created_at": captured_at.isoformat(),
         "source": BASE_URL,
-        "quotes": [{"stable_key": quote.stable_key, **asdict(quote)} for quote in quotes],
+        "records": records,
     }
 
-
-def format_percent(value: float | None) -> str:
-    return "N/A" if value is None else f"{value:+.2f}%"
-
-
-def format_spread(quote: PriceQuote) -> str:
-    if quote.spread_value is None:
-        return "N/A"
-    return f"{quote.spread_value:+.4f} ({quote.spread_label})"
+    history_path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
 
 
-def generate_markdown_report(quotes: list[PriceQuote], generated_at: str) -> str:
-    lines = [
-        f"# TrendForce 每日價格趨勢報告",
-        "",
-        f"產生時間：{generated_at}",
-        f"資料來源：{BASE_URL}/ 價格趨勢公開頁面",
-        "",
-        "> 昨日比較以本 repo 前一日快照的主要報價欄位（優先使用均價/盤平均）計算。若前一日無相同品項資料則顯示 N/A。",
-        "",
-        "| 類別 | 報價表 | 產品名稱 | Last Update | 報價資料 | 與昨天比較 | 現貨/期貨或合約價差 |",
-        "| --- | --- | --- | --- | --- | ---: | ---: |",
+def write_report(path: Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+
+
+def smtp_config_missing() -> list[str]:
+    smtp_host = os.environ.get("SMTP_HOST")
+    smtp_user = os.environ.get("SMTP_USERNAME")
+    smtp_password = os.environ.get("SMTP_PASSWORD")
+    mail_from = os.environ.get("SMTP_FROM") or os.environ.get("MAIL_FROM") or smtp_user
+
+    missing = [
+        name
+        for name, value in {
+            "SMTP_HOST": smtp_host,
+            "SMTP_USERNAME": smtp_user,
+            "SMTP_PASSWORD": smtp_password,
+            "SMTP_FROM/MAIL_FROM/SMTP_USERNAME": mail_from,
+        }.items()
+        if not value
     ]
-    for quote in sorted(quotes, key=lambda item: (item.category, item.table, item.product_name)):
-        quote_data = "; ".join(f"{key}: {value}" for key, value in quote.quote.items())
-        lines.append(
-            "| "
-            + " | ".join(
-                [
-                    quote.category,
-                    quote.table,
-                    quote.product_name,
-                    quote.last_update or "N/A",
-                    quote_data.replace("|", "/"),
-                    format_percent(quote.yesterday_change_percent),
-                    format_spread(quote),
-                ]
-            )
-            + " |"
-        )
-    return "\n".join(lines) + "\n"
+
+    return missing
 
 
-def send_email(subject: str, markdown_body: str, recipient: str, attachment_path: Path | None = None) -> None:
-    host = os.environ["SMTP_HOST"]
-    port = int(os.environ.get("SMTP_PORT") or "587")
-    username = os.environ["SMTP_USERNAME"]
-    password = os.environ["SMTP_PASSWORD"]
-    sender = os.environ.get("SMTP_FROM") or username
+def send_email(
+    subject: str,
+    text_body: str,
+    html_body: str,
+    recipient: str,
+    attachment_path: Path | None = None,
+) -> None:
+    smtp_host = os.environ["SMTP_HOST"]
+    smtp_port = int(os.environ.get("SMTP_PORT") or "587")
+    smtp_user = os.environ["SMTP_USERNAME"]
+    smtp_password = os.environ["SMTP_PASSWORD"]
+    mail_from = os.environ.get("SMTP_FROM") or os.environ.get("MAIL_FROM") or smtp_user
     use_ssl = os.environ.get("SMTP_USE_SSL", "false").lower() == "true"
 
     message = EmailMessage()
     message["Subject"] = subject
-    message["From"] = sender
+    message["From"] = mail_from
     message["To"] = recipient
-    message.set_content(markdown_body)
+    message.set_content(text_body)
+    message.add_alternative(html_body, subtype="html")
+
     if attachment_path and attachment_path.exists():
         message.add_attachment(
             attachment_path.read_bytes(),
@@ -300,57 +652,119 @@ def send_email(subject: str, markdown_body: str, recipient: str, attachment_path
         )
 
     if use_ssl:
-        with smtplib.SMTP_SSL(host, port, context=ssl.create_default_context()) as smtp:
-            smtp.login(username, password)
+        with smtplib.SMTP_SSL(
+            smtp_host,
+            smtp_port,
+            timeout=30,
+            context=ssl.create_default_context(),
+        ) as smtp:
+            smtp.login(smtp_user, smtp_password)
             smtp.send_message(message)
     else:
-        with smtplib.SMTP(host, port) as smtp:
+        with smtplib.SMTP(smtp_host, smtp_port, timeout=30) as smtp:
             smtp.starttls(context=ssl.create_default_context())
-            smtp.login(username, password)
+            smtp.login(smtp_user, smtp_password)
             smtp.send_message(message)
 
 
-def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output-dir", default="reports")
-    parser.add_argument("--history-dir", default="data/history")
-    parser.add_argument("--recipient", default=os.environ.get("REPORT_RECIPIENT", DEFAULT_RECIPIENT))
-    parser.add_argument("--send-email", action="store_true")
-    parser.add_argument("--skip-email-if-missing-secrets", action="store_true")
-    args = parser.parse_args(argv)
+def run(args: argparse.Namespace) -> int:
+    captured_at = datetime.now(TIMEZONE)
+    today = captured_at.date()
 
-    tz = ZoneInfo("Asia/Taipei")
-    today = datetime.now(tz).date()
-    generated_at = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S %Z")
     output_dir = Path(args.output_dir)
     history_dir = Path(args.history_dir)
-    output_dir.mkdir(parents=True, exist_ok=True)
-    history_dir.mkdir(parents=True, exist_ok=True)
+    history_path = Path(args.history)
 
-    quotes = scrape_all(PRICE_CATEGORY_URLS)
-    previous_snapshot = history_dir / f"{today - timedelta(days=1)}.json"
-    add_comparisons(quotes, load_history(previous_snapshot))
-    add_spreads(quotes)
+    report_html_path = Path(args.report_html) if args.report_html else output_dir / "latest.html"
+    report_md_path = Path(args.report_md) if args.report_md else output_dir / "latest.md"
+    daily_report_md_path = output_dir / f"trendforce_daily_report_{today}.md"
+    daily_snapshot_path = history_dir / f"{today}.json"
 
-    snapshot_path = history_dir / f"{today}.json"
-    snapshot_path.write_text(json.dumps(serialise_snapshot(quotes, generated_at), ensure_ascii=False, indent=2), encoding="utf-8")
-    report_path = output_dir / f"trendforce_daily_report_{today}.md"
-    markdown = generate_markdown_report(quotes, generated_at)
-    report_path.write_text(markdown, encoding="utf-8")
+    previous_records = load_previous_records(history_path)
+
+    if not previous_records:
+        previous_daily_snapshot = history_dir / f"{today - timedelta(days=1)}.json"
+        previous_records = load_previous_records(previous_daily_snapshot)
+
+    records: list[dict[str, Any]] = []
+
+    for fetch in fetch_pages(timeout=args.timeout):
+        records.extend(parse_price_page(fetch, captured_at))
+
+    if not records:
+        raise RuntimeError("No price records were parsed from TrendForce pages.")
+
+    add_daily_comparisons(records, previous_records)
+    add_spreads(records)
+
+    html_report = build_html_report(records, captured_at)
+    markdown_report = build_markdown_report(records, captured_at)
+
+    write_report(report_html_path, html_report)
+    write_report(report_md_path, markdown_report)
+    write_report(daily_report_md_path, markdown_report)
+
+    save_history(daily_snapshot_path, records, captured_at)
+
+    if args.save_history:
+        save_history(history_path, records, captured_at)
 
     if args.send_email:
-        required = ["SMTP_HOST", "SMTP_USERNAME", "SMTP_PASSWORD"]
-        missing = [name for name in required if not os.environ.get(name)]
-        if missing and args.skip_email_if_missing_secrets:
-            print(f"Skip email because missing secrets: {', '.join(missing)}", file=sys.stderr)
-        elif missing:
-            raise RuntimeError(f"Missing SMTP environment variables: {', '.join(missing)}")
-        else:
-            send_email(f"TrendForce 每日價格趨勢報告 {today}", markdown, args.recipient, report_path)
+        missing = smtp_config_missing()
 
-    print(f"Wrote {len(quotes)} quotes to {report_path} and {snapshot_path}")
+        if missing and args.skip_email_if_missing_secrets:
+            print(
+                f"Skip email because missing SMTP configuration: {', '.join(missing)}",
+                file=sys.stderr,
+            )
+        elif missing:
+            raise RuntimeError(f"Missing email configuration: {', '.join(missing)}")
+        else:
+            recipient = (
+                args.mail_to
+                or args.recipient
+                or os.environ.get("MAIL_TO")
+                or os.environ.get("REPORT_RECIPIENT")
+                or DEFAULT_MAIL_TO
+            )
+
+            send_email(
+                subject=f"TrendForce 每日報價報告 {today}",
+                text_body=markdown_report,
+                html_body=html_report,
+                recipient=recipient,
+                attachment_path=report_md_path,
+            )
+
+    print(f"Parsed {len(records)} records.")
+    print(f"HTML report: {report_html_path}")
+    print(f"Markdown report: {report_md_path}")
+    print(f"Daily Markdown report: {daily_report_md_path}")
+    print(f"Daily snapshot: {daily_snapshot_path}")
+
+    if args.save_history:
+        print(f"History: {history_path}")
+
     return 0
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Generate a daily TrendForce price report.")
+
+    parser.add_argument("--history", default="data/trendforce_history.json")
+    parser.add_argument("--history-dir", default="data/history")
+    parser.add_argument("--output-dir", default="reports")
+    parser.add_argument("--report-html", default=None)
+    parser.add_argument("--report-md", default=None)
+    parser.add_argument("--mail-to", default=None)
+    parser.add_argument("--recipient", default=None)
+    parser.add_argument("--timeout", type=int, default=30)
+    parser.add_argument("--save-history", action="store_true")
+    parser.add_argument("--send-email", action="store_true")
+    parser.add_argument("--skip-email-if-missing-secrets", action="store_true")
+
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(run(parse_args()))
