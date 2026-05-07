@@ -1,0 +1,1 @@
+# trendforce_report
