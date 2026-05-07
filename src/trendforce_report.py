@@ -101,6 +101,22 @@ TOOLTIP_ATTRIBUTES = (
     "aria-label",
 )
 
+NON_PRICE_SECTION_KEYWORDS = (
+    "shipment",
+    "出貨",
+    "出货",
+    "出貨量",
+    "出货量",
+)
+
+NON_PRICE_HEADER_KEYWORDS = (
+    "k units",
+    "k unit",
+    "k square",
+    "worldwide",
+    "area",
+)
+
 
 @dataclass
 class FetchResult:
@@ -319,6 +335,28 @@ def get_section_update(section: Tag) -> str | None:
     return text.replace("Last Update", "").strip() or None
 
 
+def is_non_price_section(section_title: str, headers: list[str]) -> bool:
+    """Return True for tables that are market statistics, not price quotes.
+
+    Example: TFT-LCD "Large Size Panel Shipment" contains shipment volume / area
+    columns such as K units and K square. It is useful industry data, but it is
+    not a quote table and should not appear in the daily price report.
+    """
+    lowered_title = section_title.lower()
+
+    if any(keyword in lowered_title for keyword in NON_PRICE_SECTION_KEYWORDS):
+        return True
+
+    lowered_headers = [header.lower() for header in headers]
+    matched_headers = sum(
+        1
+        for header in lowered_headers
+        if any(keyword in header for keyword in NON_PRICE_HEADER_KEYWORDS)
+    )
+
+    return matched_headers >= 2
+
+
 def parse_price_page(fetch: FetchResult, captured_at: datetime) -> list[dict[str, Any]]:
     soup = BeautifulSoup(fetch.html_text, "html.parser")
     records: list[dict[str, Any]] = []
@@ -343,6 +381,9 @@ def parse_price_page(fetch: FetchResult, captured_at: datetime) -> list[dict[str
         headers = unique_headers(headers)
 
         if not headers:
+            continue
+
+        if is_non_price_section(section_title, headers):
             continue
 
         first_price_column = find_first_price_column(headers)
