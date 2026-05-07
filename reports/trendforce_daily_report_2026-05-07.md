@@ -1,6 +1,6 @@
 # TrendForce 每日報價報告 - 2026-05-07
 
-抓取時間：2026-05-07 20:14:52 CST
+抓取時間：2026-05-07 20:30:06 CST
 
 > PDF/HTML 報告採用台灣市場慣例：漲幅以紅色標示，跌幅以綠色標示。
 > 昨日比較以 repository 中前一次保存的主要報價欄位計算。若前一份資料沒有相同品項，則顯示 N/A。
@@ -204,11 +204,3 @@ Last Update: 2026-04-29
 - LCD MNT / 34"W_WV LED | 低點: 225.0; 高點: 341.3; 均價: 317.4; Last Avg: 302.4; extra_8: ▲ 4.90 % | 來源漲跌幅: ▲ 14.90% | 昨日比較: — 0.00%
 - LCD MNT / Curved 34"W | 低點: 373.1; 高點: 428.6; 均價: 408.9; Last Avg: 407.0; extra_8: ▲ 0.50 % | 來源漲跌幅: ▲ 1.90% | 昨日比較: — 0.00%
 - LCD TV / 32"_LED | 低點: 152.9; 高點: 208.0; 均價: 168.7; Last Avg: 169.8; extra_8: ▼ -0.70 % | 來源漲跌幅: ▼ -1.10% | 昨日比較: — 0.00%
-### Large Size Panel Shipment $USD
-Last Update: 2026-04-21
-
-- Tablet / 19143 / 28900 | February: ▲ 51.00 %; March: Tablet; K square: 869; February_2: ▲ 57.30 % | 來源漲跌幅: ▲ 552.00% | 昨日比較: — 0.00%
-- Notebook / 14885 / 22860 | February: ▲ 53.60 %; March: Notebook; K square: 1486; February_2: ▲ 56.40 % | 來源漲跌幅: ▲ 950.00% | 昨日比較: — 0.00%
-- Monitor / 12274 / 15216 | February: ▲ 24.00 %; March: Monitor; K square: 2934; February_2: ▲ 24.20 % | 來源漲跌幅: ▲ 2362.00% | 昨日比較: — 0.00%
-- TV / 18459 / 21474 | February: ▲ 16.30 %; March: TV; K square: 17001; February_2: ▲ 19.70 % | 來源漲跌幅: ▲ 14203.00% | 昨日比較: — 0.00%
-- TTL / 64762 / 88450 | February: ▲ 36.60 %; March: TTL; K square: 22289; February_2: ▲ 23.40 % | 來源漲跌幅: ▲ 18066.00% | 昨日比較: — 0.00%
