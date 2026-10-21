@@ -1,176 +1,176 @@
 {
-  "created_at": "2026-10-20T23:17:35.874814+08:00",
+  "created_at": "2026-10-21T23:29:57.169162+08:00",
   "records": [
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": "SK Hynix、Samsung",
       "currency": null,
-      "daily_change_percent": 0.11050088235779225,
-      "previous_value": 60.633,
-      "primary_value": 60.7,
+      "daily_change_percent": 0.27512355848434017,
+      "previous_value": 60.7,
+      "primary_value": 60.867,
       "primary_value_label": "盤平均",
       "product_name": "DDR5 16Gb (2Gx8) 4800/5600",
       "quote": {
         "日低點": "46.50",
         "日高點": "71.00",
-        "盤低點": "46.50",
-        "盤平均": "60.70",
-        "盤漲跌幅": "▲ 0.11 %",
+        "盤低點": "46.80",
+        "盤平均": "60.867",
+        "盤漲跌幅": "▲ 0.28 %",
         "盤高點": "71.00",
         "項目": "DDR5 16Gb (2Gx8) 4800/5600"
       },
       "section": "DRAM Spot Price",
       "section_kind": "spot",
-      "site_change_percent": 0.11,
-      "source_update": "2026-10-20 18:10 (GMT+8)",
+      "site_change_percent": 0.28,
+      "source_update": "2026-10-21 18:10 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spread_key": "ddr5 16gb 2gx8"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": "Samsung",
       "currency": null,
-      "daily_change_percent": 0.7067137809187254,
-      "previous_value": 28.3,
-      "primary_value": 28.5,
+      "daily_change_percent": 0.3508771929824611,
+      "previous_value": 28.5,
+      "primary_value": 28.6,
       "primary_value_label": "盤平均",
       "product_name": "DDR5 16Gb (2Gx8) eTT",
       "quote": {
         "日低點": "28.00",
         "日高點": "30.00",
         "盤低點": "28.00",
-        "盤平均": "28.50",
-        "盤漲跌幅": "▲ 0.71 %",
+        "盤平均": "28.60",
+        "盤漲跌幅": "▲ 0.35 %",
         "盤高點": "30.00",
         "項目": "DDR5 16Gb (2Gx8) eTT"
       },
       "section": "DRAM Spot Price",
       "section_kind": "spot",
-      "site_change_percent": 0.71,
-      "source_update": "2026-10-20 18:10 (GMT+8)",
+      "site_change_percent": 0.35,
+      "source_update": "2026-10-21 18:10 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spread_key": "ddr5 16gb 2gx8 ett"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": "Samsung、SK Hynix、Micron",
       "currency": null,
-      "daily_change_percent": -0.05994197616706687,
-      "previous_value": 83.414,
-      "primary_value": 83.364,
+      "daily_change_percent": -0.2962909649249075,
+      "previous_value": 83.364,
+      "primary_value": 83.117,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 16Gb (2Gx8) 3200",
       "quote": {
-        "日低點": "45.80",
-        "日高點": "117.00",
-        "盤低點": "45.80",
-        "盤平均": "83.364",
-        "盤漲跌幅": "▼ -0.06 %",
-        "盤高點": "117.00",
+        "日低點": "45.50",
+        "日高點": "116.00",
+        "盤低點": "45.50",
+        "盤平均": "83.117",
+        "盤漲跌幅": "▼ -0.30 %",
+        "盤高點": "116.00",
         "項目": "DDR4 16Gb (2Gx8) 3200"
       },
       "section": "DRAM Spot Price",
       "section_kind": "spot",
-      "site_change_percent": -0.06,
-      "source_update": "2026-10-20 18:10 (GMT+8)",
+      "site_change_percent": -0.3,
+      "source_update": "2026-10-21 18:10 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spot_contract_spread": {
         "contract_section": "DRAM Contract Price (2H Aug)",
-        "label": "-33.36 (負價差)",
+        "label": "-33.12 (負價差)",
         "spot_section": "DRAM Spot Price",
-        "value": -33.364000000000004
+        "value": -33.117000000000004
       },
       "spread_key": "ddr4 16gb 2gx8"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": "SK Hynix、Samsung、Spectek",
       "currency": null,
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -0.8865248226950355,
       "previous_value": 14.1,
-      "primary_value": 14.1,
+      "primary_value": 13.975,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 16Gb (2Gx8) eTT",
       "quote": {
-        "日低點": "13.50",
+        "日低點": "13.30",
         "日高點": "15.50",
-        "盤低點": "13.50",
-        "盤平均": "14.10",
-        "盤漲跌幅": "— 0.00 %",
+        "盤低點": "13.30",
+        "盤平均": "13.975",
+        "盤漲跌幅": "▼ -0.89 %",
         "盤高點": "15.50",
         "項目": "DDR4 16Gb (2Gx8) eTT"
       },
       "section": "DRAM Spot Price",
       "section_kind": "spot",
-      "site_change_percent": 0.0,
-      "source_update": "2026-10-20 18:10 (GMT+8)",
+      "site_change_percent": -0.89,
+      "source_update": "2026-10-21 18:10 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spread_key": "ddr4 16gb 2gx8 ett"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": "Samsung、SK Hynix、Micron",
       "currency": null,
-      "daily_change_percent": 0.8396597855169625,
-      "previous_value": 45.971,
-      "primary_value": 46.357,
+      "daily_change_percent": 0.9254265806674332,
+      "previous_value": 46.357,
+      "primary_value": 46.786,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 8Gb (1Gx8) 3200",
       "quote": {
-        "日低點": "24.70",
+        "日低點": "25.00",
         "日高點": "85.00",
-        "盤低點": "24.70",
-        "盤平均": "46.357",
-        "盤漲跌幅": "▲ 0.84 %",
+        "盤低點": "25.00",
+        "盤平均": "46.786",
+        "盤漲跌幅": "▲ 0.93 %",
         "盤高點": "85.00",
         "項目": "DDR4 8Gb (1Gx8) 3200"
       },
       "section": "DRAM Spot Price",
       "section_kind": "spot",
-      "site_change_percent": 0.84,
-      "source_update": "2026-10-20 18:10 (GMT+8)",
+      "site_change_percent": 0.93,
+      "source_update": "2026-10-21 18:10 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spot_contract_spread": {
         "contract_section": "DRAM Contract Price (2H Aug)",
-        "label": "-21.36 (負價差)",
+        "label": "-21.79 (負價差)",
         "spot_section": "DRAM Spot Price",
-        "value": -21.357
+        "value": -21.786
       },
       "spread_key": "ddr4 8gb 1gx8"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": "SK Hynix、Spectek、Samsung、CXMT",
       "currency": null,
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 0.03355704697986208,
       "previous_value": 5.96,
-      "primary_value": 5.96,
+      "primary_value": 5.962,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 8Gb (1Gx8) eTT",
       "quote": {
         "日低點": "5.80",
         "日高點": "6.25",
         "盤低點": "5.80",
-        "盤平均": "5.96",
-        "盤漲跌幅": "— 0.00 %",
+        "盤平均": "5.962",
+        "盤漲跌幅": "▲ 0.03 %",
         "盤高點": "6.25",
         "項目": "DDR4 8Gb (1Gx8) eTT"
       },
       "section": "DRAM Spot Price",
       "section_kind": "spot",
-      "site_change_percent": 0.0,
-      "source_update": "2026-10-20 18:10 (GMT+8)",
+      "site_change_percent": 0.03,
+      "source_update": "2026-10-21 18:10 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spread_key": "ddr4 8gb 1gx8 ett"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": "SK Hynix, Micron, Samsung, Nanya",
       "currency": null,
@@ -191,12 +191,12 @@
       "section": "DRAM Spot Price",
       "section_kind": "spot",
       "site_change_percent": 0.0,
-      "source_update": "2026-10-20 18:10 (GMT+8)",
+      "source_update": "2026-10-21 18:10 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spread_key": "ddr3 4gb 512mx8"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": null,
       "currency": null,
@@ -221,7 +221,7 @@
       "spread_key": "ddr5 8gb so dimm"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": null,
       "currency": null,
@@ -246,7 +246,7 @@
       "spread_key": "ddr4 16gb so dimm"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": null,
       "currency": null,
@@ -271,7 +271,7 @@
       "spread_key": "ddr4 8gb so dimm"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": null,
       "currency": null,
@@ -295,14 +295,14 @@
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spot_contract_spread": {
         "contract_section": "DRAM Contract Price (2H Aug)",
-        "label": "-33.36 (負價差)",
+        "label": "-33.12 (負價差)",
         "spot_section": "DRAM Spot Price",
-        "value": -33.364000000000004
+        "value": -33.117000000000004
       },
       "spread_key": "ddr4 16gb 2gx8"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": null,
       "currency": null,
@@ -326,14 +326,14 @@
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spot_contract_spread": {
         "contract_section": "DRAM Contract Price (2H Aug)",
-        "label": "-21.36 (負價差)",
+        "label": "-21.79 (負價差)",
         "spot_section": "DRAM Spot Price",
-        "value": -21.357
+        "value": -21.786
       },
       "spread_key": "ddr4 8gb 1gx8"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": null,
       "currency": null,
@@ -358,7 +358,7 @@
       "spread_key": "ddr4 4gb 256mx16"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": null,
       "currency": null,
@@ -383,7 +383,7 @@
       "spread_key": "ddr3 4gb 256mx16"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": "Samsung,Kingston",
       "currency": null,
@@ -409,7 +409,7 @@
       "spread_key": "ddr5 udimm 16gb"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": "Samsung",
       "currency": null,
@@ -435,7 +435,7 @@
       "spread_key": "ddr5 rdimm 32gb"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": "Crucial, Kingston, Klevv, Samsung",
       "currency": null,
@@ -461,7 +461,7 @@
       "spread_key": "ddr4 udimm 16gb"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": "Samsung, SK Hynix , Micron",
       "currency": null,
@@ -487,7 +487,7 @@
       "spread_key": "gddr5 8gb"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "DRAM",
       "company_names": "Samsung, SK Hynix , Micron",
       "currency": null,
@@ -513,7 +513,7 @@
       "spread_key": "gddr6 8gb"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": "Samsung,SK Hynix, Micron ,Kioxia",
       "currency": null,
@@ -540,7 +540,7 @@
       "spread_key": "slc 2gb 256mbx8"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": "Samsung,SK Hynix, Micron ,Kioxia",
       "currency": null,
@@ -567,7 +567,7 @@
       "spread_key": "slc 1gb 128mbx8"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": "Micron ,Kioxia",
       "currency": null,
@@ -594,7 +594,7 @@
       "spread_key": "mlc 64gb 8gbx8"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": "Micron",
       "currency": null,
@@ -621,7 +621,7 @@
       "spread_key": "mlc 32gb 4gbx8"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -647,7 +647,7 @@
       "spread_key": "nand 128gb 16gx8 mlc"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -673,7 +673,7 @@
       "spread_key": "nand 64gb 8gx8 mlc"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -699,7 +699,7 @@
       "spread_key": "nand 32gb 4gx8 mlc"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": "Samsung, SK Hynix, Micron, Kioxia, Sandisk, YMTC",
       "currency": null,
@@ -726,7 +726,7 @@
       "spread_key": "512gb tlc"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": "Samsung, SK Hynix, Micron, Kioxia, Sandisk, YMTC",
       "currency": null,
@@ -753,7 +753,7 @@
       "spread_key": "256gb tlc"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": "Samsung, SK Hynix, Micron, Kioxia, Sandisk, YMTC",
       "currency": null,
@@ -780,7 +780,7 @@
       "spread_key": "128gb tlc"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -807,7 +807,7 @@
       "spread_key": "microsd 16gb"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -834,7 +834,7 @@
       "spread_key": "microsd 32gb"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -861,7 +861,7 @@
       "spread_key": "microsd 64gb"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -888,7 +888,7 @@
       "spread_key": "microsd 128gb"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -911,7 +911,7 @@
       "spread_key": "1tb msata m 2 tlc pcie value grade"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -934,7 +934,7 @@
       "spread_key": "512gb msata m 2 tlc pcie value grade"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -957,7 +957,7 @@
       "spread_key": "256gb msata m 2 tlc pcie value grade"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -984,7 +984,7 @@
       "spread_key": "adata sata 6 0 gb s ultimate su650 gb"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -1011,7 +1011,7 @@
       "spread_key": "kimtigo pcie 4 0 tp5000 1 tb"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -1038,7 +1038,7 @@
       "spread_key": "samsung pcie 4 0 x4 pro 1 tb"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -1065,7 +1065,7 @@
       "spread_key": "pny pcie 5 0 x4 cs2150 2 tb"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -1092,7 +1092,7 @@
       "spread_key": "silicon power pcie 4 0 x4 us75 1 tb"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1122,7 +1122,7 @@
       "spread_key": "lcd tv 55 w uhd open cell lcd tv 55 w uhd open cell"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1152,7 +1152,7 @@
       "spread_key": "monitor 27 w fhd ips led monitor 27 w fhd ips led"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1182,7 +1182,7 @@
       "spread_key": "notebook 14 0 w hd flat led notebook 14 0 w hd flat led"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1209,7 +1209,7 @@
       "spread_key": "smartphone 5w hd"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1236,7 +1236,7 @@
       "spread_key": "smartphone 5 5w fhd"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1263,7 +1263,7 @@
       "spread_key": "lcd mnt 18 5 w led"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1290,7 +1290,7 @@
       "spread_key": "lcd mnt 21 5 w led"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1317,7 +1317,7 @@
       "spread_key": "lcd mnt 34 w wv led"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1344,7 +1344,7 @@
       "spread_key": "lcd mnt curved 34 w"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1371,7 +1371,7 @@
       "spread_key": "lcd tv 32 led"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1395,7 +1395,7 @@
       "spread_key": "n型复投料"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1419,7 +1419,7 @@
       "spread_key": "n型致密料"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1443,7 +1443,7 @@
       "spread_key": "n型颗粒硅"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "USD",
@@ -1467,7 +1467,7 @@
       "spread_key": "非中國區多晶矽"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1491,7 +1491,7 @@
       "spread_key": "n型183单晶硅片 183mm 130 m"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1515,7 +1515,7 @@
       "spread_key": "n型210单晶硅片 210mm 130 m"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1539,7 +1539,7 @@
       "spread_key": "n型210r单晶硅片 182mm 130 m"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1563,7 +1563,7 @@
       "spread_key": "m10l 单晶topcon电池片"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1587,7 +1587,7 @@
       "spread_key": "g12 单晶topcon电池片"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1611,7 +1611,7 @@
       "spread_key": "g12r 单晶topcon电池片"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1635,7 +1635,7 @@
       "spread_key": "182mm topcon 组件"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1659,7 +1659,7 @@
       "spread_key": "210mm hjt 组件"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1683,7 +1683,7 @@
       "spread_key": "2 0 mm 双层镀膜"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1707,7 +1707,7 @@
       "spread_key": "3 2 mm 双层镀膜"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1731,73 +1731,73 @@
       "spread_key": "2 0 背板玻璃"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 1.6129032258064528,
       "previous_value": 0.62,
-      "primary_value": 0.62,
+      "primary_value": 0.63,
       "primary_value_label": "均價",
       "product_name": "電池芯-方形三元電池芯：動力型（元/Wh） (RMB)",
       "quote": {
-        "均價": "0.62",
-        "漲跌幅": "▲ 3.33 %",
+        "均價": "0.63",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電池芯-方形三元電池芯：動力型（元/Wh） (RMB)"
       },
       "section": "電池芯及電池包 (Battery Cell & Pack)",
       "section_kind": "other",
-      "site_change_percent": 3.33,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電池芯 方形三元電池芯 動力型 元 wh"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 2.4999999999999885,
       "previous_value": 0.4,
-      "primary_value": 0.4,
+      "primary_value": 0.41,
       "primary_value_label": "均價",
       "product_name": "電池芯-方形鐵鋰電池芯：動力型（元/Wh） (RMB)",
       "quote": {
-        "均價": "0.40",
-        "漲跌幅": "▲ 2.56 %",
+        "均價": "0.41",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電池芯-方形鐵鋰電池芯：動力型（元/Wh） (RMB)"
       },
       "section": "電池芯及電池包 (Battery Cell & Pack)",
       "section_kind": "other",
-      "site_change_percent": 2.56,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電池芯 方形鐵鋰電池芯 動力型 元 wh"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 1.5873015873015885,
       "previous_value": 0.63,
-      "primary_value": 0.63,
+      "primary_value": 0.64,
       "primary_value_label": "均價",
       "product_name": "電池芯-軟包三元電池芯：動力型（元/Wh） (RMB)",
       "quote": {
-        "均價": "0.63",
-        "漲跌幅": "▲ 3.28 %",
+        "均價": "0.64",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電池芯-軟包三元電池芯：動力型（元/Wh） (RMB)"
       },
       "section": "電池芯及電池包 (Battery Cell & Pack)",
       "section_kind": "other",
-      "site_change_percent": 3.28,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電池芯 軟包三元電池芯 動力型 元 wh"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -1814,298 +1814,298 @@
       "section": "電池芯及電池包 (Battery Cell & Pack)",
       "section_kind": "other",
       "site_change_percent": 0.0,
-      "source_update": "2026-09-07",
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電池芯 方形鐵鋰電池芯 儲能型 元 wh"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -1.8072289156626546,
       "previous_value": 8.3,
-      "primary_value": 8.3,
+      "primary_value": 8.15,
       "primary_value_label": "均價",
       "product_name": "電池芯-鈷酸鋰電池芯：消費型（元/Ah） (RMB)",
       "quote": {
-        "均價": "8.30",
-        "漲跌幅": "▼ -1.19 %",
+        "均價": "8.15",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電池芯-鈷酸鋰電池芯：消費型（元/Ah） (RMB)"
       },
       "section": "電池芯及電池包 (Battery Cell & Pack)",
       "section_kind": "other",
-      "site_change_percent": -1.19,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電池芯 鈷酸鋰電池芯 消費型 元 ah"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 1.2658227848101276,
       "previous_value": 0.79,
-      "primary_value": 0.79,
+      "primary_value": 0.8,
       "primary_value_label": "均價",
       "product_name": "電池包-方形三元（元/Wh） (RMB)",
       "quote": {
-        "均價": "0.79",
-        "漲跌幅": "▲ 2.60 %",
+        "均價": "0.80",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電池包-方形三元（元/Wh） (RMB)"
       },
       "section": "電池芯及電池包 (Battery Cell & Pack)",
       "section_kind": "other",
-      "site_change_percent": 2.6,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電池包 方形三元 元 wh"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 1.9230769230769247,
       "previous_value": 0.52,
-      "primary_value": 0.52,
+      "primary_value": 0.53,
       "primary_value_label": "均價",
       "product_name": "電池包-方形磷酸鐵鋰（元/Wh） (RMB)",
       "quote": {
-        "均價": "0.52",
-        "漲跌幅": "▲ 1.96 %",
+        "均價": "0.53",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電池包-方形磷酸鐵鋰（元/Wh） (RMB)"
       },
       "section": "電池芯及電池包 (Battery Cell & Pack)",
       "section_kind": "other",
-      "site_change_percent": 1.96,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電池包 方形磷酸鐵鋰 元 wh"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 3.164556962025305,
       "previous_value": 1.58,
-      "primary_value": 1.58,
+      "primary_value": 1.63,
       "primary_value_label": "均價",
       "product_name": "前驅體-磷酸鐵（萬元/噸） (RMB)",
       "quote": {
-        "均價": "1.58",
-        "漲跌幅": "▲ 3.27 %",
+        "均價": "1.63",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "前驅體-磷酸鐵（萬元/噸） (RMB)"
       },
       "section": "前驅體及正極材料 (Precursor and Cathode Material)",
       "section_kind": "other",
-      "site_change_percent": 3.27,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "前驅體 磷酸鐵 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -5.8885383806519505,
       "previous_value": 9.51,
-      "primary_value": 9.51,
+      "primary_value": 8.95,
       "primary_value_label": "均價",
       "product_name": "前驅體-NCM523（萬元/噸） (RMB)",
       "quote": {
-        "均價": "9.51",
-        "漲跌幅": "▼ -6.58 %",
+        "均價": "8.95",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "前驅體-NCM523（萬元/噸） (RMB)"
       },
       "section": "前驅體及正極材料 (Precursor and Cathode Material)",
       "section_kind": "other",
-      "site_change_percent": -6.58,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "前驅體 ncm523 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -5.8510638297872415,
       "previous_value": 9.4,
-      "primary_value": 9.4,
+      "primary_value": 8.85,
       "primary_value_label": "均價",
       "product_name": "前驅體-NCM622（萬元/噸） (RMB)",
       "quote": {
-        "均價": "9.40",
-        "漲跌幅": "▼ -5.43 %",
+        "均價": "8.85",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "前驅體-NCM622（萬元/噸） (RMB)"
       },
       "section": "前驅體及正極材料 (Precursor and Cathode Material)",
       "section_kind": "other",
-      "site_change_percent": -5.43,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "前驅體 ncm622 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -4.847396768402162,
       "previous_value": 11.14,
-      "primary_value": 11.14,
+      "primary_value": 10.6,
       "primary_value_label": "均價",
       "product_name": "前驅體-NCM811（萬元/噸） (RMB)",
       "quote": {
-        "均價": "11.14",
-        "漲跌幅": "▼ -4.46 %",
+        "均價": "10.60",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "前驅體-NCM811（萬元/噸） (RMB)"
       },
       "section": "前驅體及正極材料 (Precursor and Cathode Material)",
       "section_kind": "other",
-      "site_change_percent": -4.46,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "前驅體 ncm811 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -3.6670547147846273,
       "previous_value": 17.18,
-      "primary_value": 17.18,
+      "primary_value": 16.55,
       "primary_value_label": "均價",
       "product_name": "正極材料-NCM523（萬元/噸） (RMB)",
       "quote": {
-        "均價": "17.18",
-        "漲跌幅": "▼ -3.65 %",
+        "均價": "16.55",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "正極材料-NCM523（萬元/噸） (RMB)"
       },
       "section": "前驅體及正極材料 (Precursor and Cathode Material)",
       "section_kind": "other",
-      "site_change_percent": -3.65,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "正極材料 ncm523 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -3.380281690140853,
       "previous_value": 17.75,
-      "primary_value": 17.75,
+      "primary_value": 17.15,
       "primary_value_label": "均價",
       "product_name": "正極材料-NCM622（萬元/噸） (RMB)",
       "quote": {
-        "均價": "17.75",
-        "漲跌幅": "▼ -2.63 %",
+        "均價": "17.15",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "正極材料-NCM622（萬元/噸） (RMB)"
       },
       "section": "前驅體及正極材料 (Precursor and Cathode Material)",
       "section_kind": "other",
-      "site_change_percent": -2.63,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "正極材料 ncm622 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -2.9471544715447067,
       "previous_value": 19.68,
-      "primary_value": 19.68,
+      "primary_value": 19.1,
       "primary_value_label": "均價",
       "product_name": "正極材料-NCM811（萬元/噸） (RMB)",
       "quote": {
-        "均價": "19.68",
-        "漲跌幅": "▼ -1.89 %",
+        "均價": "19.10",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "正極材料-NCM811（萬元/噸） (RMB)"
       },
       "section": "前驅體及正極材料 (Precursor and Cathode Material)",
       "section_kind": "other",
-      "site_change_percent": -1.89,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "正極材料 ncm811 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -4.77876106194691,
       "previous_value": 5.65,
-      "primary_value": 5.65,
+      "primary_value": 5.38,
       "primary_value_label": "均價",
       "product_name": "正極材料-LFP（萬元/噸） (RMB)",
       "quote": {
-        "均價": "5.65",
-        "漲跌幅": "▼ -1.05 %",
+        "均價": "5.38",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "正極材料-LFP（萬元/噸） (RMB)"
       },
       "section": "前驅體及正極材料 (Precursor and Cathode Material)",
       "section_kind": "other",
-      "site_change_percent": -1.05,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "正極材料 lfp 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -8.581539368917714,
       "previous_value": 33.91,
-      "primary_value": 33.91,
+      "primary_value": 31.0,
       "primary_value_label": "均價",
       "product_name": "正極材料-LCO（萬元/噸） (RMB)",
       "quote": {
-        "均價": "33.91",
-        "漲跌幅": "▼ -5.75 %",
+        "均價": "31.00",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "正極材料-LCO（萬元/噸） (RMB)"
       },
       "section": "前驅體及正極材料 (Precursor and Cathode Material)",
       "section_kind": "other",
-      "site_change_percent": -5.75,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "正極材料 lco 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -3.8112522686025407,
       "previous_value": 5.51,
-      "primary_value": 5.51,
+      "primary_value": 5.3,
       "primary_value_label": "均價",
       "product_name": "正極材料-LMO（萬元/噸） (RMB)",
       "quote": {
-        "均價": "5.51",
-        "漲跌幅": "▼ -4.34 %",
+        "均價": "5.30",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "正極材料-LMO（萬元/噸） (RMB)"
       },
       "section": "前驅體及正極材料 (Precursor and Cathode Material)",
       "section_kind": "other",
-      "site_change_percent": -4.34,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "正極材料 lmo 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2122,34 +2122,34 @@
       "section": "負極材料(Anode Material)",
       "section_kind": "other",
       "site_change_percent": 0.0,
-      "source_update": "2026-09-07",
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "石墨化加工費 低階 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 0.980392156862746,
       "previous_value": 1.02,
-      "primary_value": 1.02,
+      "primary_value": 1.03,
       "primary_value_label": "均價",
       "product_name": "石墨化加工費-高階（萬元/噸） (RMB)",
       "quote": {
-        "均價": "1.02",
-        "漲跌幅": "▲ 2.00 %",
+        "均價": "1.03",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "石墨化加工費-高階（萬元/噸） (RMB)"
       },
       "section": "負極材料(Anode Material)",
       "section_kind": "other",
-      "site_change_percent": 2.0,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "石墨化加工費 高階 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2160,18 +2160,18 @@
       "product_name": "天然石墨-低階（萬元/噸） (RMB)",
       "quote": {
         "均價": "2.22",
-        "漲跌幅": "▲ 4.72 %",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "天然石墨-低階（萬元/噸） (RMB)"
       },
       "section": "負極材料(Anode Material)",
       "section_kind": "other",
-      "site_change_percent": 4.72,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "天然石墨 低階 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2182,18 +2182,18 @@
       "product_name": "天然石墨-中階（萬元/噸） (RMB)",
       "quote": {
         "均價": "2.94",
-        "漲跌幅": "▲ 10.11 %",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "天然石墨-中階（萬元/噸） (RMB)"
       },
       "section": "負極材料(Anode Material)",
       "section_kind": "other",
-      "site_change_percent": 10.11,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "天然石墨 中階 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2204,40 +2204,40 @@
       "product_name": "天然石墨-高階（萬元/噸） (RMB)",
       "quote": {
         "均價": "4.84",
-        "漲跌幅": "▲ 7.08 %",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "天然石墨-高階（萬元/噸） (RMB)"
       },
       "section": "負極材料(Anode Material)",
       "section_kind": "other",
-      "site_change_percent": 7.08,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "天然石墨 高階 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 1.408450704225364,
       "previous_value": 2.13,
-      "primary_value": 2.13,
+      "primary_value": 2.16,
       "primary_value_label": "均價",
       "product_name": "人造石墨-低階（萬元/噸） (RMB)",
       "quote": {
-        "均價": "2.13",
+        "均價": "2.16",
         "漲跌幅": "— 0.00 %",
         "種類/型號": "人造石墨-低階（萬元/噸） (RMB)"
       },
       "section": "負極材料(Anode Material)",
       "section_kind": "other",
       "site_change_percent": 0.0,
-      "source_update": "2026-09-07",
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "人造石墨 低階 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2248,40 +2248,40 @@
       "product_name": "人造石墨-中階（萬元/噸） (RMB)",
       "quote": {
         "均價": "2.89",
-        "漲跌幅": "▼ -2.03 %",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "人造石墨-中階（萬元/噸） (RMB)"
       },
       "section": "負極材料(Anode Material)",
       "section_kind": "other",
-      "site_change_percent": -2.03,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "人造石墨 中階 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 1.1538461538461462,
       "previous_value": 5.2,
-      "primary_value": 5.2,
+      "primary_value": 5.26,
       "primary_value_label": "均價",
       "product_name": "人造石墨-高階（萬元/噸） (RMB)",
       "quote": {
-        "均價": "5.20",
+        "均價": "5.26",
         "漲跌幅": "— 0.00 %",
         "種類/型號": "人造石墨-高階（萬元/噸） (RMB)"
       },
       "section": "負極材料(Anode Material)",
       "section_kind": "other",
       "site_change_percent": 0.0,
-      "source_update": "2026-09-07",
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "人造石墨 高階 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2298,12 +2298,12 @@
       "section": "隔離膜 (Separator)",
       "section_kind": "other",
       "site_change_percent": 0.0,
-      "source_update": "2026-09-07",
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "乾式隔離膜 16 m 元 平米"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2320,12 +2320,12 @@
       "section": "隔離膜 (Separator)",
       "section_kind": "other",
       "site_change_percent": 0.0,
-      "source_update": "2026-09-07",
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "濕式隔離膜 7 m 元 平米"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2342,12 +2342,12 @@
       "section": "隔離膜 (Separator)",
       "section_kind": "other",
       "site_change_percent": 0.0,
-      "source_update": "2026-09-07",
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "濕式隔離膜 9 m 元 平米"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2364,12 +2364,12 @@
       "section": "隔離膜 (Separator)",
       "section_kind": "other",
       "site_change_percent": 0.0,
-      "source_update": "2026-09-07",
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "塗覆隔離膜 7 m 2 m陶瓷塗覆隔離膜 元 平米"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2386,315 +2386,315 @@
       "section": "隔離膜 (Separator)",
       "section_kind": "other",
       "site_change_percent": 0.0,
-      "source_update": "2026-09-07",
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "塗覆隔離膜 9 m 3 m陶瓷塗覆隔離膜 元 平米"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 12.338858195211785,
       "previous_value": 10.86,
-      "primary_value": 10.86,
+      "primary_value": 12.2,
       "primary_value_label": "均價",
       "product_name": "電解質鋰鹽-六氟磷酸鋰（萬元/噸） (RMB)",
       "quote": {
-        "均價": "10.86",
-        "漲跌幅": "▲ 8.49 %",
+        "均價": "12.20",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電解質鋰鹽-六氟磷酸鋰（萬元/噸） (RMB)"
       },
       "section": "電解液 (Electrolyte)",
       "section_kind": "other",
-      "site_change_percent": 8.49,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電解質鋰鹽 六氟磷酸鋰 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 2.4999999999999885,
       "previous_value": 3.2,
-      "primary_value": 3.2,
+      "primary_value": 3.28,
       "primary_value_label": "均價",
       "product_name": "電解液-三元電池用（萬元/噸） (RMB)",
       "quote": {
-        "均價": "3.20",
-        "漲跌幅": "▲ 7.74 %",
+        "均價": "3.28",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電解液-三元電池用（萬元/噸） (RMB)"
       },
       "section": "電解液 (Electrolyte)",
       "section_kind": "other",
-      "site_change_percent": 7.74,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電解液 三元電池用 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 3.8709677419354875,
       "previous_value": 3.1,
-      "primary_value": 3.1,
+      "primary_value": 3.22,
       "primary_value_label": "均價",
       "product_name": "電解液-磷酸鐵鋰電池用（萬元/噸） (RMB)",
       "quote": {
-        "均價": "3.10",
-        "漲跌幅": "▲ 6.90 %",
+        "均價": "3.22",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電解液-磷酸鐵鋰電池用（萬元/噸） (RMB)"
       },
       "section": "電解液 (Electrolyte)",
       "section_kind": "other",
-      "site_change_percent": 6.9,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電解液 磷酸鐵鋰電池用 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 1.098901098901095,
       "previous_value": 4.55,
-      "primary_value": 4.55,
+      "primary_value": 4.6,
       "primary_value_label": "均價",
       "product_name": "電解液-鈷酸鋰（4.35V）電池用（萬元/噸） (RMB)",
       "quote": {
-        "均價": "4.55",
-        "漲跌幅": "▲ 4.60 %",
+        "均價": "4.60",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電解液-鈷酸鋰（4.35V）電池用（萬元/噸） (RMB)"
       },
       "section": "電解液 (Electrolyte)",
       "section_kind": "other",
-      "site_change_percent": 4.6,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電解液 鈷酸鋰 4 35v 電池用 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "USD",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -91.05653382761817,
       "previous_value": 2158.0,
-      "primary_value": 2158.0,
+      "primary_value": 193.0,
       "primary_value_label": "均價",
       "product_name": "鋰輝石精礦:6%，CIF（美元/噸） (USD)",
       "quote": {
-        "均價": "2158.00",
-        "漲跌幅": "▼ -1.69 %",
+        "均價": "193.00",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "鋰輝石精礦:6%，CIF（美元/噸） (USD)"
       },
       "section": "鋰、鈷、鎳 (Li & Co & Ni)",
       "section_kind": "other",
-      "site_change_percent": -1.69,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "鋰輝石精礦 6 cif 美元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -6.604402935290195,
       "previous_value": 14.99,
-      "primary_value": 14.99,
+      "primary_value": 14.0,
       "primary_value_label": "均價",
       "product_name": "電池級碳酸鋰（萬元/噸） (RMB)",
       "quote": {
-        "均價": "14.99",
-        "漲跌幅": "▼ -2.15 %",
+        "均價": "14.00",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電池級碳酸鋰（萬元/噸） (RMB)"
       },
       "section": "鋰、鈷、鎳 (Li & Co & Ni)",
       "section_kind": "other",
-      "site_change_percent": -2.15,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電池級碳酸鋰 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -6.7796610169491585,
       "previous_value": 14.16,
-      "primary_value": 14.16,
+      "primary_value": 13.2,
       "primary_value_label": "均價",
       "product_name": "電池級氫氧化鋰（萬元/噸） (RMB)",
       "quote": {
-        "均價": "14.16",
-        "漲跌幅": "▼ -4.71 %",
+        "均價": "13.20",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電池級氫氧化鋰（萬元/噸） (RMB)"
       },
       "section": "鋰、鈷、鎳 (Li & Co & Ni)",
       "section_kind": "other",
-      "site_change_percent": -4.71,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電池級氫氧化鋰 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -8.920773549594518,
       "previous_value": 32.06,
-      "primary_value": 32.06,
+      "primary_value": 29.2,
       "primary_value_label": "均價",
       "product_name": "電解鈷：Co含量≥99.8%（萬元/噸） (RMB)",
       "quote": {
-        "均價": "32.06",
-        "漲跌幅": "▼ -12.43 %",
+        "均價": "29.20",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電解鈷：Co含量≥99.8%（萬元/噸） (RMB)"
       },
       "section": "鋰、鈷、鎳 (Li & Co & Ni)",
       "section_kind": "other",
-      "site_change_percent": -12.43,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電解鈷 co含量 99 8 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -6.086956521739131,
       "previous_value": 28.75,
-      "primary_value": 28.75,
+      "primary_value": 27.0,
       "primary_value_label": "均價",
       "product_name": "四氧化三鈷：Co含量≥72.8%（萬元/噸） (RMB)",
       "quote": {
-        "均價": "28.75",
-        "漲跌幅": "▼ -12.05 %",
+        "均價": "27.00",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "四氧化三鈷：Co含量≥72.8%（萬元/噸） (RMB)"
       },
       "section": "鋰、鈷、鎳 (Li & Co & Ni)",
       "section_kind": "other",
-      "site_change_percent": -12.05,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "四氧化三鈷 co含量 72 8 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -11.196911196911188,
       "previous_value": 7.77,
-      "primary_value": 7.77,
+      "primary_value": 6.9,
       "primary_value_label": "均價",
       "product_name": "電池級硫酸鈷：Co含量≥20.5%（萬元/噸） (RMB)",
       "quote": {
-        "均價": "7.77",
-        "漲跌幅": "▼ -8.37 %",
+        "均價": "6.90",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電池級硫酸鈷：Co含量≥20.5%（萬元/噸） (RMB)"
       },
       "section": "鋰、鈷、鎳 (Li & Co & Ni)",
       "section_kind": "other",
-      "site_change_percent": -8.37,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電池級硫酸鈷 co含量 20 5 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -2.8309104820199003,
       "previous_value": 13.07,
-      "primary_value": 13.07,
+      "primary_value": 12.7,
       "primary_value_label": "均價",
       "product_name": "電解鎳 Ni 99.9%min（萬元/噸） (RMB)",
       "quote": {
-        "均價": "13.07",
-        "漲跌幅": "▲ 0.23 %",
+        "均價": "12.70",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電解鎳 Ni 99.9%min（萬元/噸） (RMB)"
       },
       "section": "鋰、鈷、鎳 (Li & Co & Ni)",
       "section_kind": "other",
-      "site_change_percent": 0.23,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電解鎳 ni 99 9 min 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -3.8095238095238133,
       "previous_value": 3.15,
-      "primary_value": 3.15,
+      "primary_value": 3.03,
       "primary_value_label": "均價",
       "product_name": "電池級硫酸鎳 Ni 22%min（萬元/噸） (RMB)",
       "quote": {
-        "均價": "3.15",
-        "漲跌幅": "▼ -3.08 %",
+        "均價": "3.03",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "電池級硫酸鎳 Ni 22%min（萬元/噸） (RMB)"
       },
       "section": "鋰、鈷、鎳 (Li & Co & Ni)",
       "section_kind": "other",
-      "site_change_percent": -3.08,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "電池級硫酸鎳 ni 22 min 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 2.32558139534885,
       "previous_value": 2.15,
-      "primary_value": 2.15,
+      "primary_value": 2.2,
       "primary_value_label": "均價",
       "product_name": "銅箔-6μm電池級銅箔加工費（萬元/噸） (RMB)",
       "quote": {
-        "均價": "2.15",
-        "漲跌幅": "▲ 2.38 %",
+        "均價": "2.20",
+        "漲跌幅": "— 0.00 %",
         "種類/型號": "銅箔-6μm電池級銅箔加工費（萬元/噸） (RMB)"
       },
       "section": "其他 (Other)",
       "section_kind": "other",
-      "site_change_percent": 2.38,
-      "source_update": "2026-09-07",
+      "site_change_percent": 0.0,
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "銅箔 6 m電池級銅箔加工費 萬元 噸"
     },
     {
-      "captured_at": "2026-10-20T23:17:35.874814+08:00",
+      "captured_at": "2026-10-21T23:29:57.169162+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 1.250000000000001,
       "previous_value": 1.6,
-      "primary_value": 1.6,
+      "primary_value": 1.62,
       "primary_value_label": "均價",
       "product_name": "鋁箔-12μm電池級鋁箔加工費（萬元/噸） (RMB)",
       "quote": {
-        "均價": "1.60",
+        "均價": "1.62",
         "漲跌幅": "— 0.00 %",
         "種類/型號": "鋁箔-12μm電池級鋁箔加工費（萬元/噸） (RMB)"
       },
       "section": "其他 (Other)",
       "section_kind": "other",
       "site_change_percent": 0.0,
-      "source_update": "2026-09-07",
+      "source_update": "2026-10-21",
       "source_url": "https://www.trendforce.com.tw/price/battery-price/battery_cell_and_pack",
       "spread_key": "鋁箔 12 m電池級鋁箔加工費 萬元 噸"
     }
