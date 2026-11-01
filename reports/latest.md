@@ -1,6 +1,6 @@
-# TrendForce 每日報價報告 - 2026-10-31
+# TrendForce 每日報價報告 - 2026-11-02
 
-抓取時間：2026-10-31 23:49:40 CST
+抓取時間：2026-11-02 00:53:40 CST
 
 > PDF/HTML 報告採用台灣市場慣例：漲幅以紅色標示，跌幅以綠色標示。
 > 昨日比較以 repository 中前一次保存的主要報價欄位計算。若前一份資料沒有相同品項，則顯示 N/A。
@@ -186,21 +186,21 @@ Last Update: 2026-10-28
 ## TFT-LCD
 
 ### Large Size Panel Price $USD
-Last Update: 2026-09-29
+Last Update: 2026-10-20
 
 - LCD TV / 55"W UHD Open-Cell / LCD TV 55"W UHD Open-Cell | 低點: 116.0; 高點: 126.0; 均價: 123.0; Last Avg: 123.0; extra_11: — 0.00 % | 來源漲跌幅: — 0.00% | 昨日比較: — 0.00%
 - Monitor / 27"W FHD/IPS LED / Monitor 27"W FHD/IPS LED | 低點: 58.0; 高點: 66.4; 均價: 63.6; Last Avg: 63.6; extra_11: — 0.00 % | 來源漲跌幅: — 0.00% | 昨日比較: — 0.00%
 - Notebook / 14.0"W HD Flat-LED / Notebook 14.0"W HD Flat-LED | 低點: 26.2; 高點: 27.9; 均價: 26.7; Last Avg: 26.7; extra_11: — 0.00 % | 來源漲跌幅: — 0.00% | 昨日比較: — 0.00%
 ### LCD Smartphone Panel Price $USD
-Last Update: 2026-08-31
+Last Update: 2026-10-29
 
 - Smartphone / 5W HD | 低點: IPS/Cell; 高點: 1.2; 均價: 1.7; Last Avg: 1.4; extra_8: — 0.00 % | 來源漲跌幅: ▲ 1.40% | 昨日比較: — 0.00%
 - Smartphone / 5.5W FHD | 低點: IPS/Module; 高點: 5.7; 均價: 8.5; Last Avg: 6.2; extra_8: — 0.00 % | 來源漲跌幅: ▲ 6.20% | 昨日比較: — 0.00%
 ### Street Price $USD
-Last Update: 2026-08-31
+Last Update: 2026-10-30
 
-- LCD MNT / 18.5"W LED | 低點: 78.4; 高點: 78.4; 均價: 78.4; Last Avg: 75.7; extra_8: ▲ 3.50 % | 來源漲跌幅: ▲ 2.70% | 昨日比較: — 0.00%
-- LCD MNT / 21.5"W LED | 低點: 98.8; 高點: 141.4; 均價: 100.2; Last Avg: 100.2; extra_8: ▼ 0.00 % | 來源漲跌幅: — 0.00% | 昨日比較: — 0.00%
-- LCD MNT / 34"W_WV LED | 低點: 210.0; 高點: 334.6; 均價: 294.8; Last Avg: 292.7; extra_8: ▲ 0.70 % | 來源漲跌幅: ▲ 2.10% | 昨日比較: — 0.00%
-- LCD MNT / Curved 34"W | 低點: 394.3; 高點: 455.9; 均價: 419.1; Last Avg: 416.5; extra_8: ▲ 0.60 % | 來源漲跌幅: ▲ 2.60% | 昨日比較: — 0.00%
-- LCD TV / 32"_LED | 低點: 156.9; 高點: 230.0; 均價: 178.3; Last Avg: 172.5; extra_8: ▲ 3.30 % | 來源漲跌幅: ▲ 5.80% | 昨日比較: — 0.00%
+- LCD MNT / 18.5"W LED | 低點: 76.8; 高點: 76.8; 均價: 76.8; Last Avg: 76.6; extra_8: ▲ 0.30 % | 來源漲跌幅: ▲ 0.20% | 昨日比較: ▼ -2.04%
+- LCD MNT / 21.5"W LED | 低點: 99.7; 高點: 141.9; 均價: 101.1; Last Avg: 102.3; extra_8: ▼ -1.10 % | 來源漲跌幅: ▼ -1.10% | 昨日比較: ▲ 0.90%
+- LCD MNT / 34"W_WV LED | 低點: 200.0; 高點: 337.1; 均價: 281.3; Last Avg: 293.5; extra_8: ▼ -4.20 % | 來源漲跌幅: ▼ -12.20% | 昨日比較: ▼ -4.58%
+- LCD MNT / Curved 34"W | 低點: 373.3; 高點: 469.0; 均價: 419.8; Last Avg: 416.8; extra_8: ▲ 0.70 % | 來源漲跌幅: ▲ 3.00% | 昨日比較: ▲ 0.17%
+- LCD TV / 32"_LED | 低點: 157.0; 高點: 261.4; 均價: 179.6; Last Avg: 180.7; extra_8: ▼ -0.60 % | 來源漲跌幅: ▼ -1.10% | 昨日比較: ▲ 0.73%
