@@ -1,47 +1,47 @@
 {
-  "created_at": "2026-11-13T02:31:02.214766+08:00",
+  "created_at": "2026-11-14T01:58:28.594890+08:00",
   "records": [
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": "SK Hynix、Samsung",
       "currency": null,
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 0.05644746235453327,
       "previous_value": 60.233,
-      "primary_value": 60.233,
+      "primary_value": 60.267,
       "primary_value_label": "盤平均",
       "product_name": "DDR5 16Gb (2Gx8) 4800/5600",
       "quote": {
         "日低點": "45.50",
         "日高點": "72.50",
         "盤低點": "45.50",
-        "盤平均": "60.233",
-        "盤漲跌幅": "— 0.00 %",
+        "盤平均": "60.267",
+        "盤漲跌幅": "▲ 0.06 %",
         "盤高點": "72.50",
         "項目": "DDR5 16Gb (2Gx8) 4800/5600"
       },
       "section": "DRAM Spot Price",
       "section_kind": "spot",
-      "site_change_percent": 0.0,
-      "source_update": "2026-11-12 18:10 (GMT+8)",
+      "site_change_percent": 0.06,
+      "source_update": "2026-11-13 18:10 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spread_key": "ddr5 16gb 2gx8"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": "Samsung",
       "currency": null,
-      "daily_change_percent": 0.16447368421052866,
-      "previous_value": 30.4,
-      "primary_value": 30.45,
+      "daily_change_percent": 0.16420361247947687,
+      "previous_value": 30.45,
+      "primary_value": 30.5,
       "primary_value_label": "盤平均",
       "product_name": "DDR5 16Gb (2Gx8) eTT",
       "quote": {
         "日低點": "29.70",
         "日高點": "31.50",
         "盤低點": "29.70",
-        "盤平均": "30.45",
+        "盤平均": "30.50",
         "盤漲跌幅": "▲ 0.16 %",
         "盤高點": "31.50",
         "項目": "DDR5 16Gb (2Gx8) eTT"
@@ -49,83 +49,83 @@
       "section": "DRAM Spot Price",
       "section_kind": "spot",
       "site_change_percent": 0.16,
-      "source_update": "2026-11-12 18:10 (GMT+8)",
+      "source_update": "2026-11-13 18:10 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spread_key": "ddr5 16gb 2gx8 ett"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": "Samsung、SK Hynix、Micron",
       "currency": null,
-      "daily_change_percent": -0.14649354551943158,
-      "previous_value": 79.867,
-      "primary_value": 79.75,
+      "daily_change_percent": -0.3134796238244514,
+      "previous_value": 79.75,
+      "primary_value": 79.5,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 16Gb (2Gx8) 3200",
       "quote": {
         "日低點": "45.00",
         "日高點": "114.00",
         "盤低點": "45.00",
-        "盤平均": "79.75",
-        "盤漲跌幅": "▼ -0.15 %",
+        "盤平均": "79.50",
+        "盤漲跌幅": "▼ -0.31 %",
         "盤高點": "114.00",
         "項目": "DDR4 16Gb (2Gx8) 3200"
       },
       "section": "DRAM Spot Price",
       "section_kind": "spot",
-      "site_change_percent": -0.15,
-      "source_update": "2026-11-12 18:10 (GMT+8)",
+      "site_change_percent": -0.31,
+      "source_update": "2026-11-13 18:10 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spot_contract_spread": {
         "contract_section": "DRAM Contract Price (2H Sep)",
-        "label": "-27.75 (負價差)",
+        "label": "-27.5 (負價差)",
         "spot_section": "DRAM Spot Price",
-        "value": -27.75
+        "value": -27.5
       },
       "spread_key": "ddr4 16gb 2gx8"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": "SK Hynix、Samsung、Spectek",
       "currency": null,
-      "daily_change_percent": -0.38095238095238637,
-      "previous_value": 13.125,
-      "primary_value": 13.075,
+      "daily_change_percent": -0.9560229445506693,
+      "previous_value": 13.075,
+      "primary_value": 12.95,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 16Gb (2Gx8) eTT",
       "quote": {
         "日低點": "11.60",
         "日高點": "13.70",
         "盤低點": "11.60",
-        "盤平均": "13.075",
-        "盤漲跌幅": "▼ -0.38 %",
+        "盤平均": "12.95",
+        "盤漲跌幅": "▼ -0.96 %",
         "盤高點": "13.70",
         "項目": "DDR4 16Gb (2Gx8) eTT"
       },
       "section": "DRAM Spot Price",
       "section_kind": "spot",
-      "site_change_percent": -0.38,
-      "source_update": "2026-11-12 18:10 (GMT+8)",
+      "site_change_percent": -0.96,
+      "source_update": "2026-11-13 18:10 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spread_key": "ddr4 16gb 2gx8 ett"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": "Samsung、SK Hynix、Micron",
       "currency": null,
-      "daily_change_percent": -0.39872585926536885,
-      "previous_value": 44.893,
-      "primary_value": 44.714,
+      "daily_change_percent": -0.39808561077066973,
+      "previous_value": 44.714,
+      "primary_value": 44.536,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 8Gb (1Gx8) 3200",
       "quote": {
         "日低點": "24.80",
         "日高點": "82.00",
         "盤低點": "24.80",
-        "盤平均": "44.714",
+        "盤平均": "44.536",
         "盤漲跌幅": "▼ -0.40 %",
         "盤高點": "82.00",
         "項目": "DDR4 8Gb (1Gx8) 3200"
@@ -133,70 +133,70 @@
       "section": "DRAM Spot Price",
       "section_kind": "spot",
       "site_change_percent": -0.4,
-      "source_update": "2026-11-12 18:10 (GMT+8)",
+      "source_update": "2026-11-13 18:10 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spot_contract_spread": {
         "contract_section": "DRAM Contract Price (2H Sep)",
-        "label": "-18.71 (負價差)",
+        "label": "-18.54 (負價差)",
         "spot_section": "DRAM Spot Price",
-        "value": -18.714
+        "value": -18.536
       },
       "spread_key": "ddr4 8gb 1gx8"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": "SK Hynix、Spectek、Samsung、CXMT",
       "currency": null,
-      "daily_change_percent": -0.3539823008849639,
-      "previous_value": 5.65,
-      "primary_value": 5.63,
+      "daily_change_percent": -0.3552397868561203,
+      "previous_value": 5.63,
+      "primary_value": 5.61,
       "primary_value_label": "盤平均",
       "product_name": "DDR4 8Gb (1Gx8) eTT",
       "quote": {
-        "日低點": "5.40",
+        "日低點": "5.35",
         "日高點": "5.90",
-        "盤低點": "5.40",
-        "盤平均": "5.63",
-        "盤漲跌幅": "▼ -0.35 %",
+        "盤低點": "5.35",
+        "盤平均": "5.61",
+        "盤漲跌幅": "▼ -0.36 %",
         "盤高點": "5.90",
         "項目": "DDR4 8Gb (1Gx8) eTT"
       },
       "section": "DRAM Spot Price",
       "section_kind": "spot",
-      "site_change_percent": -0.35,
-      "source_update": "2026-11-12 18:10 (GMT+8)",
+      "site_change_percent": -0.36,
+      "source_update": "2026-11-13 18:10 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spread_key": "ddr4 8gb 1gx8 ett"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": "SK Hynix, Micron, Samsung, Nanya",
       "currency": null,
-      "daily_change_percent": -0.05078351712131057,
-      "previous_value": 13.784,
-      "primary_value": 13.777,
+      "daily_change_percent": -0.13065253683674896,
+      "previous_value": 13.777,
+      "primary_value": 13.759,
       "primary_value_label": "盤平均",
       "product_name": "DDR3 4Gb 512Mx8 1600/1866",
       "quote": {
         "日低點": "9.70",
         "日高點": "21.00",
         "盤低點": "9.70",
-        "盤平均": "13.777",
-        "盤漲跌幅": "▼ -0.05 %",
+        "盤平均": "13.759",
+        "盤漲跌幅": "▼ -0.13 %",
         "盤高點": "21.00",
         "項目": "DDR3 4Gb 512Mx8 1600/1866"
       },
       "section": "DRAM Spot Price",
       "section_kind": "spot",
-      "site_change_percent": -0.05,
-      "source_update": "2026-11-12 18:10 (GMT+8)",
+      "site_change_percent": -0.13,
+      "source_update": "2026-11-13 18:10 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spread_key": "ddr3 4gb 512mx8"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": null,
       "currency": null,
@@ -221,7 +221,7 @@
       "spread_key": "ddr5 8gb so dimm"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": null,
       "currency": null,
@@ -246,7 +246,7 @@
       "spread_key": "ddr4 16gb so dimm"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": null,
       "currency": null,
@@ -271,7 +271,7 @@
       "spread_key": "ddr4 8gb so dimm"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": null,
       "currency": null,
@@ -295,14 +295,14 @@
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spot_contract_spread": {
         "contract_section": "DRAM Contract Price (2H Sep)",
-        "label": "-27.75 (負價差)",
+        "label": "-27.5 (負價差)",
         "spot_section": "DRAM Spot Price",
-        "value": -27.75
+        "value": -27.5
       },
       "spread_key": "ddr4 16gb 2gx8"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": null,
       "currency": null,
@@ -326,14 +326,14 @@
       "source_url": "https://www.trendforce.com.tw/price/dram/dram_spot",
       "spot_contract_spread": {
         "contract_section": "DRAM Contract Price (2H Sep)",
-        "label": "-18.71 (負價差)",
+        "label": "-18.54 (負價差)",
         "spot_section": "DRAM Spot Price",
-        "value": -18.714
+        "value": -18.536
       },
       "spread_key": "ddr4 8gb 1gx8"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": null,
       "currency": null,
@@ -358,7 +358,7 @@
       "spread_key": "ddr4 4gb 256mx16"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": null,
       "currency": null,
@@ -383,7 +383,7 @@
       "spread_key": "ddr3 4gb 256mx16"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": "Samsung,Kingston",
       "currency": null,
@@ -409,7 +409,7 @@
       "spread_key": "ddr5 udimm 16gb"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": "Samsung",
       "currency": null,
@@ -435,7 +435,7 @@
       "spread_key": "ddr5 rdimm 32gb"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": "Crucial, Kingston, Klevv, Samsung",
       "currency": null,
@@ -461,7 +461,7 @@
       "spread_key": "ddr4 udimm 16gb"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": "Samsung, SK Hynix , Micron",
       "currency": null,
@@ -487,7 +487,7 @@
       "spread_key": "gddr5 8gb"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "DRAM",
       "company_names": "Samsung, SK Hynix , Micron",
       "currency": null,
@@ -513,7 +513,7 @@
       "spread_key": "gddr6 8gb"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": "Samsung,SK Hynix, Micron ,Kioxia",
       "currency": null,
@@ -540,7 +540,7 @@
       "spread_key": "slc 2gb 256mbx8"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": "Samsung,SK Hynix, Micron ,Kioxia",
       "currency": null,
@@ -567,7 +567,7 @@
       "spread_key": "slc 1gb 128mbx8"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": "Micron ,Kioxia",
       "currency": null,
@@ -594,7 +594,7 @@
       "spread_key": "mlc 64gb 8gbx8"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": "Micron",
       "currency": null,
@@ -621,7 +621,7 @@
       "spread_key": "mlc 32gb 4gbx8"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -647,7 +647,7 @@
       "spread_key": "nand 128gb 16gx8 mlc"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -673,7 +673,7 @@
       "spread_key": "nand 64gb 8gx8 mlc"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -699,7 +699,7 @@
       "spread_key": "nand 32gb 4gx8 mlc"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": "Samsung, SK Hynix, Micron, Kioxia, Sandisk, YMTC",
       "currency": null,
@@ -726,7 +726,7 @@
       "spread_key": "512gb tlc"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": "Samsung, SK Hynix, Micron, Kioxia, Sandisk, YMTC",
       "currency": null,
@@ -753,7 +753,7 @@
       "spread_key": "256gb tlc"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": "Samsung, SK Hynix, Micron, Kioxia, Sandisk, YMTC",
       "currency": null,
@@ -780,7 +780,7 @@
       "spread_key": "128gb tlc"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -807,7 +807,7 @@
       "spread_key": "microsd 16gb"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -834,7 +834,7 @@
       "spread_key": "microsd 32gb"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -861,7 +861,7 @@
       "spread_key": "microsd 64gb"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -888,7 +888,7 @@
       "spread_key": "microsd 128gb"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -911,7 +911,7 @@
       "spread_key": "1tb msata m 2 tlc pcie value grade"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -934,7 +934,7 @@
       "spread_key": "512gb msata m 2 tlc pcie value grade"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -957,88 +957,88 @@
       "spread_key": "256gb msata m 2 tlc pcie value grade"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
-      "daily_change_percent": 0.0,
+      "daily_change_percent": -0.21208299896824748,
       "previous_value": 174.46,
-      "primary_value": 174.46,
+      "primary_value": 174.09,
       "primary_value_label": "均價",
       "product_name": "ADATA / SATA 6.0 Gb/s / Ultimate SU650 / 960 GB",
       "quote": {
-        "低點": "174.46",
+        "低點": "173.71",
         "品牌": "ADATA",
-        "均價": "174.46",
+        "均價": "174.09",
         "容量": "960 GB",
-        "漲跌幅": "▲ 0.44 %",
+        "漲跌幅": "▼ -0.22 %",
         "系列": "Ultimate SU650",
         "規格": "SATA 6.0 Gb/s",
         "高點": "174.46"
       },
       "section": "SSD Street Price",
       "section_kind": "spot",
-      "site_change_percent": 0.44,
-      "source_update": "2026-10-30 11:30 (GMT+8)",
+      "site_change_percent": -0.22,
+      "source_update": "2026-11-13 14:00 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/flash/flash_spot",
       "spread_key": "adata sata 6 0 gb s ultimate su650 gb"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 5.263157894736842,
       "previous_value": 133.0,
-      "primary_value": 133.0,
+      "primary_value": 140.0,
       "primary_value_label": "均價",
       "product_name": "Kimtigo / PCIe 4.0 / TP5000 / 1 TB",
       "quote": {
-        "低點": "115.70",
+        "低點": "121.80",
         "品牌": "Kimtigo",
-        "均價": "133.00",
+        "均價": "140.00",
         "容量": "1 TB",
-        "漲跌幅": "— 0.00 %",
+        "漲跌幅": "▲ 5.26 %",
         "系列": "TP5000",
         "規格": "PCIe 4.0",
-        "高點": "150.30"
+        "高點": "158.20"
       },
       "section": "SSD Street Price",
       "section_kind": "spot",
-      "site_change_percent": 0.0,
-      "source_update": "2026-10-30 11:30 (GMT+8)",
+      "site_change_percent": 5.26,
+      "source_update": "2026-11-13 14:00 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/flash/flash_spot",
       "spread_key": "kimtigo pcie 4 0 tp5000 1 tb"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
-      "daily_change_percent": 0.0,
+      "daily_change_percent": 0.026931363496457823,
       "previous_value": 259.92,
-      "primary_value": 259.92,
+      "primary_value": 259.99,
       "primary_value_label": "均價",
       "product_name": "Samsung / PCIe 4.0 X4 / 990 Pro / 1 TB",
       "quote": {
-        "低點": "259.84",
+        "低點": "259.99",
         "品牌": "Samsung",
-        "均價": "259.92",
+        "均價": "259.99",
         "容量": "1 TB",
-        "漲跌幅": "▲ 3.97 %",
+        "漲跌幅": "▲ 0.03 %",
         "系列": "990 Pro",
         "規格": "PCIe 4.0 X4",
         "高點": "259.99"
       },
       "section": "SSD Street Price",
       "section_kind": "spot",
-      "site_change_percent": 3.97,
-      "source_update": "2026-10-30 11:30 (GMT+8)",
+      "site_change_percent": 0.03,
+      "source_update": "2026-11-13 14:00 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/flash/flash_spot",
       "spread_key": "samsung pcie 4 0 x4 pro 1 tb"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -1060,12 +1060,12 @@
       "section": "SSD Street Price",
       "section_kind": "spot",
       "site_change_percent": 0.0,
-      "source_update": "2026-10-30 11:30 (GMT+8)",
+      "source_update": "2026-11-13 14:00 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/flash/flash_spot",
       "spread_key": "pny pcie 5 0 x4 cs2150 2 tb"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "NAND Flash",
       "company_names": null,
       "currency": null,
@@ -1079,20 +1079,20 @@
         "品牌": "Silicon Power",
         "均價": "187.79",
         "容量": "1 TB",
-        "漲跌幅": "▲ 0.44 %",
+        "漲跌幅": "— 0.00 %",
         "系列": "US75",
         "規格": "PCIe 4.0 X4",
         "高點": "187.79"
       },
       "section": "SSD Street Price",
       "section_kind": "spot",
-      "site_change_percent": 0.44,
-      "source_update": "2026-10-30 11:30 (GMT+8)",
+      "site_change_percent": 0.0,
+      "source_update": "2026-11-13 14:00 (GMT+8)",
       "source_url": "https://www.trendforce.com.tw/price/flash/flash_spot",
       "spread_key": "silicon power pcie 4 0 x4 us75 1 tb"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1122,7 +1122,7 @@
       "spread_key": "lcd tv 55 w uhd open cell lcd tv 55 w uhd open cell"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1152,7 +1152,7 @@
       "spread_key": "monitor 27 w fhd ips led monitor 27 w fhd ips led"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1182,7 +1182,7 @@
       "spread_key": "notebook 14 0 w hd flat led notebook 14 0 w hd flat led"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1209,7 +1209,7 @@
       "spread_key": "smartphone 5w hd"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1236,7 +1236,7 @@
       "spread_key": "smartphone 5 5w fhd"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1263,7 +1263,7 @@
       "spread_key": "lcd mnt 18 5 w led"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1290,7 +1290,7 @@
       "spread_key": "lcd mnt 21 5 w led"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1317,7 +1317,7 @@
       "spread_key": "lcd mnt 34 w wv led"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1344,7 +1344,7 @@
       "spread_key": "lcd mnt curved 34 w"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "TFT-LCD",
       "company_names": null,
       "currency": "USD",
@@ -1371,7 +1371,7 @@
       "spread_key": "lcd tv 32 led"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1395,7 +1395,7 @@
       "spread_key": "n型复投料"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1419,7 +1419,7 @@
       "spread_key": "n型致密料"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1443,7 +1443,7 @@
       "spread_key": "n型颗粒硅"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "USD",
@@ -1467,7 +1467,7 @@
       "spread_key": "非中國區多晶矽"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1491,7 +1491,7 @@
       "spread_key": "n型183单晶硅片 183mm 130 m"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1515,7 +1515,7 @@
       "spread_key": "n型210单晶硅片 210mm 130 m"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1539,7 +1539,7 @@
       "spread_key": "n型210r单晶硅片 182mm 130 m"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1563,7 +1563,7 @@
       "spread_key": "m10l 单晶topcon电池片"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1587,7 +1587,7 @@
       "spread_key": "g12 单晶topcon电池片"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1611,7 +1611,7 @@
       "spread_key": "g12r 单晶topcon电池片"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1635,7 +1635,7 @@
       "spread_key": "182mm topcon 组件"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1659,7 +1659,7 @@
       "spread_key": "210mm hjt 组件"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1683,7 +1683,7 @@
       "spread_key": "2 0 mm 双层镀膜"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1707,7 +1707,7 @@
       "spread_key": "3 2 mm 双层镀膜"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "PV",
       "company_names": null,
       "currency": "RMB",
@@ -1731,7 +1731,7 @@
       "spread_key": "2 0 背板玻璃"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -1753,7 +1753,7 @@
       "spread_key": "電池芯 方形三元電池芯 動力型 元 wh"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -1775,7 +1775,7 @@
       "spread_key": "電池芯 方形鐵鋰電池芯 動力型 元 wh"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -1797,7 +1797,7 @@
       "spread_key": "電池芯 軟包三元電池芯 動力型 元 wh"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -1819,7 +1819,7 @@
       "spread_key": "電池芯 方形鐵鋰電池芯 儲能型 元 wh"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -1841,7 +1841,7 @@
       "spread_key": "電池芯 鈷酸鋰電池芯 消費型 元 ah"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -1863,7 +1863,7 @@
       "spread_key": "電池包 方形三元 元 wh"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -1885,7 +1885,7 @@
       "spread_key": "電池包 方形磷酸鐵鋰 元 wh"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -1907,7 +1907,7 @@
       "spread_key": "前驅體 磷酸鐵 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -1929,7 +1929,7 @@
       "spread_key": "前驅體 ncm523 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -1951,7 +1951,7 @@
       "spread_key": "前驅體 ncm622 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -1973,7 +1973,7 @@
       "spread_key": "前驅體 ncm811 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -1995,7 +1995,7 @@
       "spread_key": "正極材料 ncm523 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2017,7 +2017,7 @@
       "spread_key": "正極材料 ncm622 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2039,7 +2039,7 @@
       "spread_key": "正極材料 ncm811 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2061,7 +2061,7 @@
       "spread_key": "正極材料 lfp 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2083,7 +2083,7 @@
       "spread_key": "正極材料 lco 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2105,7 +2105,7 @@
       "spread_key": "正極材料 lmo 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2127,7 +2127,7 @@
       "spread_key": "石墨化加工費 低階 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2149,7 +2149,7 @@
       "spread_key": "石墨化加工費 高階 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2171,7 +2171,7 @@
       "spread_key": "天然石墨 低階 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2193,7 +2193,7 @@
       "spread_key": "天然石墨 中階 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2215,7 +2215,7 @@
       "spread_key": "天然石墨 高階 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2237,7 +2237,7 @@
       "spread_key": "人造石墨 低階 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2259,7 +2259,7 @@
       "spread_key": "人造石墨 中階 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2281,7 +2281,7 @@
       "spread_key": "人造石墨 高階 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2303,7 +2303,7 @@
       "spread_key": "乾式隔離膜 16 m 元 平米"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2325,7 +2325,7 @@
       "spread_key": "濕式隔離膜 7 m 元 平米"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2347,7 +2347,7 @@
       "spread_key": "濕式隔離膜 9 m 元 平米"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2369,7 +2369,7 @@
       "spread_key": "塗覆隔離膜 7 m 2 m陶瓷塗覆隔離膜 元 平米"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2391,7 +2391,7 @@
       "spread_key": "塗覆隔離膜 9 m 3 m陶瓷塗覆隔離膜 元 平米"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2413,7 +2413,7 @@
       "spread_key": "電解質鋰鹽 六氟磷酸鋰 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2435,7 +2435,7 @@
       "spread_key": "電解液 三元電池用 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2457,7 +2457,7 @@
       "spread_key": "電解液 磷酸鐵鋰電池用 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2479,7 +2479,7 @@
       "spread_key": "電解液 鈷酸鋰 4 35v 電池用 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "USD",
@@ -2501,7 +2501,7 @@
       "spread_key": "鋰輝石精礦 6 cif 美元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2523,7 +2523,7 @@
       "spread_key": "電池級碳酸鋰 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2545,7 +2545,7 @@
       "spread_key": "電池級氫氧化鋰 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2567,7 +2567,7 @@
       "spread_key": "電解鈷 co含量 99 8 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2589,7 +2589,7 @@
       "spread_key": "四氧化三鈷 co含量 72 8 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2611,7 +2611,7 @@
       "spread_key": "電池級硫酸鈷 co含量 20 5 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2633,7 +2633,7 @@
       "spread_key": "電解鎳 ni 99 9 min 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2655,7 +2655,7 @@
       "spread_key": "電池級硫酸鎳 ni 22 min 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
@@ -2677,7 +2677,7 @@
       "spread_key": "銅箔 6 m電池級銅箔加工費 萬元 噸"
     },
     {
-      "captured_at": "2026-11-13T02:31:02.214766+08:00",
+      "captured_at": "2026-11-14T01:58:28.594890+08:00",
       "category": "Li-Ion Battery",
       "company_names": null,
       "currency": "RMB",
